@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def index(request):
+    content = {
+        'title': 'Расписание дежурств',
+        'txt': 'просто текст',
+    }
+    return render(request, 'duty/index.html', content)

@@ -122,6 +122,6 @@ for i in c.itermonthdays(god, mes):
 for t in table:
     print(t)
 
-{% if {{now}} %}
-{% else %}
-{% endif}
+# {% if {{now}} %}
+# {% else %}
+# {% endif %}

@@ -110,6 +110,7 @@ print(now, '\n')
 for i in c.itermonthdays(god, mes):
     if i != 0:
         day = datetime.date(god, mes, i)
+        print(day)
         n_d = calendar.weekday(god, mes, i)
         stroka = pytils.dt.ru_strftime(u"%d - %a", inflected=True, date=day)
         if n_d in range(5):

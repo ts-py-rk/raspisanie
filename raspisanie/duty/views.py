@@ -2,9 +2,10 @@ from django.shortcuts import render
 import datetime
 import calendar
 import pytils
+from .models import Month
 
 def index(request):
-
+    person = Month.objects.all()
     c = calendar.Calendar()
     today = datetime.datetime.now()
     god, mes = today.year, today.month
@@ -34,5 +35,10 @@ def index(request):
         'txt': 'Расписание дежурств',
         'now': now,
         'table': table,
+        'person': person,
+
     }
     return render(request, 'duty/index.html', content)
+
+
+# return render(request, 'index.html', {'person': person})

@@ -7,21 +7,11 @@
 {% block content %}
     <a href="admin">admin</a><br>
     <h1>{{ txt }}</h1>
-    <br>
-<!--    {{ now }}-->
-    <br>
     <table border="0">
-        {% for t in table %}
+        {% for t in person %}
             <tr>
-                {% if t == now %}
-                    <td bgcolor="#AEDBAD">{{ t }}</td>
-
-                {% else %}
-                    <td>{{ t }} </td>
-
-                {% endif %}
+                <td>{{ t }} </td>
             </tr>
         {% endfor %}
     </table>
-
 {% endblock %}

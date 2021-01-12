@@ -1,4 +1,5 @@
 from django.db import models
+# from .models import
 # from mptt.models import MPTTModel, TreeForeignKey
 #
 # class Genre(MPTTModel):
@@ -70,6 +71,7 @@ class Month(models.Model):
 
         a = f'{self.person.familia} - {self.day} - {self.day_of_week}'
         return a
+
 
     class Meta:
         verbose_name = "Дежурство"

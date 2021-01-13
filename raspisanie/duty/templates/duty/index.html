@@ -7,10 +7,35 @@
 {% block content %}
     <a href="admin">admin</a><br>
     <h1>{{ txt }}</h1>
-    <table border="0">
-        {% for t in person %}
+<!--    <table border="1">-->
+<!--        <tr bgcolor="#ccc">-->
+<!--            <td>день недели</td>-->
+<!--            <td>число</td>-->
+<!--            <td>дежурный</td>-->
+<!--        </tr>-->
+<!--        {% for tt in table %}-->
+<!--            <tr>-->
+<!--                {% for t in tt %}-->
+<!--                <td>{{ t }} </td>-->
+<!--                {% endfor %}-->
+<!--&lt;!&ndash;                <td>{{ person.person }}</td>&ndash;&gt;-->
+<!--            </tr>-->
+<!--        {% endfor %}-->
+<!--    </table>-->
+
+<table border="1">
+        <tr bgcolor="#ccc">
+            <td>день недели</td>
+            <td>число</td>
+            <td>дежурный</td>
+        </tr>
+        {% for t in table %}
             <tr>
-                <td>{{ t }} </td>
+
+                <td>{{ t.0 }} </td>
+                <td>{{ t.1 }} </td>
+                <td>{{ people }} </td>
+
             </tr>
         {% endfor %}
     </table>

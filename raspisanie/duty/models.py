@@ -68,10 +68,17 @@ class Month(models.Model):
     def __str__(self):
         if self.person == None:
             return "person IS NULL"
-
-        a = f'{self.person.familia} - {self.day} - {self.day_of_week}'
+        # d_o_w = self.day_of_week
+        # chislo = str(self.day)[:2]
+        # name = self.person.familia
+        # a = f'{d_o_w}  - {chislo} - {name}'
+        a = {
+            'd_o_w': self.day_of_week,
+            'chislo': str(self.day)[:2],
+            'name': self.person.familia,
+        }
         return a
-
+        # return d_o_w, chislo, name
 
     class Meta:
         verbose_name = "Дежурство"

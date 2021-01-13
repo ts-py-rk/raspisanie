@@ -1,44 +1,57 @@
 from django.shortcuts import render
+from django.urls import path
+from django.contrib import admin
 import datetime
 import calendar
 import pytils
 from .models import Month
+from .models import People
 
 def index(request):
-    person = Month.objects.all()
+    # m = Month.objects.get('name')
     c = calendar.Calendar()
+    p = People.objects.filter(id=1)
     today = datetime.datetime.now()
     god, mes = today.year, today.month
     now = pytils.dt.ru_strftime(u"%d - %a", inflected=True, date=today)
     # now = pytils.dt.ru_strftime(u"сегодня - %d %B %Y, %A", inflected=True, date=today)
     table = []
-
-    # print(now, '\n')
+    id = []
+    chislo = []
+    den_ned = []
+    pers_id = 1
+    supe_id = 1
+    da_of_we = []
 
     for i in c.itermonthdays(god, mes):
+        stro = []
         if i != 0:
             day = datetime.date(god, mes, i)
+            dayy = str(day)
             n_d = calendar.weekday(god, mes, i)
-            stroka = pytils.dt.ru_strftime(u"%d - %a", inflected=True, date=day)
+            stroka = pytils.dt.ru_strftime(u"%Y-%B-%D", inflected=True, date=day)
+
+            day_of_week = pytils.dt.ru_strftime(u"%a", inflected=True, date=day)
             if n_d in range(5):
-                # print(f'{stroka}')
-                table.append(stroka)
+                # stro.append(dayy)
+                # stro.append(1)
+                # stro.append(1)
+                # stro.append(2)
+                stro.append(day_of_week)
+                stro.append(i)
+                table.append(stro)
+
             elif n_d == 5:
-                # print(' ')
-                table.append('')
-            else:                       #
-                table.append(stroka)    # надо будет убрать
-
-
+                pass
     content = {
         'title': 'Расписание дежурств',
         'txt': 'Расписание дежурств',
         'now': now,
         'table': table,
-        'person': person,
-
+        # 'months': months,
+        # 'test' : Month.objects.get(id='day')
+        'people': p
     }
     return render(request, 'duty/index.html', content)
 
 
-# return render(request, 'index.html', {'person': person})

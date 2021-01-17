@@ -1,44 +1,27 @@
 {% extends 'duty/base.html' %}
 
 {% block title %}
-{{ title }}
+    {{ title }}
 {% endblock %}
 
 {% block content %}
     <a href="admin">admin</a><br>
     <h1>{{ txt }}</h1>
-
-<div>
-    <p>{% now "F" %}</p>
-<!--    <p>{% now "F j Y" %}</p>-->
-<!--    <p>{% now "N, j, Y" %}</p>-->
-<!--    <p>{% now "N j, Y, P" %}</p>-->
-</div>
-<table border="1">
-<!--        <tr bgcolor="#ccc"> <td>день недели</td> <td>число</td> <td>дежурный</td> </tr>-->
-        {% for t in wtf %}
-            <tr>
-                <td>{{ t.0 }} </td>
-                <td>{{ t.1 }} </td>
-                <td>{{ t.2 }} </td>
-                {% empty %}
-                <li>Langs array is empty</li>
-            </tr>
-        {% endfor %}
-    </table>
-
-<!--{% with name="Tom" age=29 %}-->
-<!--    <div>-->
-<!--        <p>Name: {{ name }}</p>-->
-<!--        <p>Age: {{ age }}</p>-->
-<!--    </div>-->
-<!--{% endwith %}-->
-
-<!--<ul>-->
-<!--    {% for n in wtf %}-->
-<!--    <li>{{ n.0 }} - {{ n.1 }} - {{ n.2 }}</li>-->
-<!--    {% empty %}-->
-<!--    <li>no nno no</li>-->
-<!--    {% endfor %}-->
-<!--</ul>-->
+    <table>
+        <caption>{% now "F" %}</caption>
+        <tr><td colspan="3"><hr></td></tr>
+            {% for t in wtf %}
+                {% if t.1 == now %}
+                    <tr class="now">
+                {% else %}
+                    <tr>
+                {% endif %}
+                    <td class="day">{{ t.0 }}</td>
+                    <td class="chislo">{{ t.1 }}</td>
+                    <td class="name">{{ t.2 }}</td></tr>
+                    {% if t.0 == "пт" %}
+                        <tr><td colspan="3"><hr></td></tr>
+                    {% endif %}
+            {% endfor %}
+        </table>
 {% endblock %}

@@ -24,7 +24,7 @@ class SuperDuty(models.Model):
     def __str__(self):
         if self.person == None:
             return "person IS NULL"
-        a = f'{self.person.familia} - {self.mesyas}'
+        a = f'{self.mesyas} - {self.person.familia}'
         return a
 
     class Meta:
@@ -47,7 +47,7 @@ class Calendar(models.Model):
 
 
 class Month(models.Model):
-    status = models.ForeignKey(Calendar, on_delete=models.CASCADE)
+    # status = models.ForeignKey(Calendar, on_delete=models.CASCADE)
     day = models.DateField()
     day_of_week = models.CharField('День недели', max_length=10)
     person = models.ForeignKey(People, on_delete=models.CASCADE)
@@ -57,17 +57,12 @@ class Month(models.Model):
         if self.person == None:
             return "person IS NULL"
         d_o_w = self.day_of_week
-        chislo = str(self.day)[2:]
+        chislo = str(self.day.day)
         name = self.person.familia
         a = f'{d_o_w}  - {chislo} - {name}'
-        # a = {
-        #     'd_o_w': self.day_of_week,
-        #     'chislo': str(self.day)[:2],
-        #     'name': self.person.familia,
-        # }
         return a
-        # return d_o_w, chislo, name
 
     class Meta:
-        verbose_name = "Дежурство"
-        verbose_name_plural = "Дежурства"
+        verbose_name = "Дежурства в этом месяце"
+        verbose_name_plural = "Дежурства в этом месяце"
+        ordering = ('id',)

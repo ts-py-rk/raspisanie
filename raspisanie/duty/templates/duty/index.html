@@ -7,58 +7,38 @@
 {% block content %}
     <a href="admin">admin</a><br>
     <h1>{{ txt }}</h1>
-<!--    <table border="1">-->
-<!--        <tr bgcolor="#ccc">-->
-<!--            <td>день недели</td>-->
-<!--            <td>число</td>-->
-<!--            <td>дежурный</td>-->
-<!--        </tr>-->
-<!--        {% for tt in table %}-->
-<!--            <tr>-->
-<!--                {% for t in tt %}-->
-<!--                <td>{{ t }} </td>-->
-<!--                {% endfor %}-->
-<!--&lt;!&ndash;                <td>{{ person.person }}</td>&ndash;&gt;-->
-<!--            </tr>-->
-<!--        {% endfor %}-->
-<!--    </table>-->
+
 <div>
-    <p>{% now "Y" %}</p>
-    <p>{% now "F j Y" %}</p>
-    <p>{% now "N, j, Y" %}</p>
-    <p>{% now "N j, Y, P" %}</p>
+    <p>{% now "F" %}</p>
+<!--    <p>{% now "F j Y" %}</p>-->
+<!--    <p>{% now "N, j, Y" %}</p>-->
+<!--    <p>{% now "N j, Y, P" %}</p>-->
 </div>
 <table border="1">
-        <tr bgcolor="#ccc">
-            <td>день недели</td>
-            <td>число</td>
-            <td>дежурный</td>
-        </tr>
-        {% for t in table %}
+<!--        <tr bgcolor="#ccc"> <td>день недели</td> <td>число</td> <td>дежурный</td> </tr>-->
+        {% for t in wtf %}
             <tr>
-
                 <td>{{ t.0 }} </td>
                 <td>{{ t.1 }} </td>
-
+                <td>{{ t.2 }} </td>
                 {% empty %}
                 <li>Langs array is empty</li>
-
             </tr>
         {% endfor %}
     </table>
 
-{% with name="Tom" age=29 %}
-    <div>
-        <p>Name: {{ name }}</p>
-        <p>Age: {{ age }}</p>
-    </div>
-{% endwith %}
+<!--{% with name="Tom" age=29 %}-->
+<!--    <div>-->
+<!--        <p>Name: {{ name }}</p>-->
+<!--        <p>Age: {{ age }}</p>-->
+<!--    </div>-->
+<!--{% endwith %}-->
 
-<ul>
-    {% for n in wtf %}
-    <li>{{ n.0 }} - {{ n.1 }}</li>
-    {% empty %}
-    <li>no nno no</li>
-    {% endfor %}
-</ul>
+<!--<ul>-->
+<!--    {% for n in wtf %}-->
+<!--    <li>{{ n.0 }} - {{ n.1 }} - {{ n.2 }}</li>-->
+<!--    {% empty %}-->
+<!--    <li>no nno no</li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
 {% endblock %}

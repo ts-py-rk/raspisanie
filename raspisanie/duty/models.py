@@ -1,19 +1,10 @@
 from django.db import models
-# from .models import
-# from mptt.models import MPTTModel, TreeForeignKey
-#
-# class Genre(MPTTModel):
-#     name = models.CharField(max_length=50, unique=True)
-#     parent = TreeForeignKey('self', on_delete=models.CASCADE, null=True, blank=True, related_name='children')
-#
-#     class MPTTMeta:
-#         order_insertion_by = ['name']
+
 
 class People(models.Model):
     familia = models.CharField('Фамилия', max_length=10)
     imya = models.CharField('Имя', max_length=10)
     otche = models.CharField('Отчество', max_length=10)
-
 
     def __str__(self):
         if self.familia == None:
@@ -30,13 +21,10 @@ class SuperDuty(models.Model):
     mesyas = models.DateField()
     year = models.DateField()
 
-
     def __str__(self):
         if self.person == None:
             return "person IS NULL"
-
         a = f'{self.person.familia} - {self.mesyas}'
-
         return a
 
     class Meta:
@@ -69,16 +57,16 @@ class Month(models.Model):
         if self.person == None:
             return "person IS NULL"
         d_o_w = self.day_of_week
-        chislo = str(self.day)[:2]
+        chislo = str(self.day)[2:]
         name = self.person.familia
-        # a = f'{d_o_w}  - {chislo} - {name}'
-        a = {
-            'd_o_w': self.day_of_week,
-            'chislo': str(self.day)[:2],
-            'name': self.person.familia,
-        }
-        # return a
-        return d_o_w, chislo, name
+        a = f'{d_o_w}  - {chislo} - {name}'
+        # a = {
+        #     'd_o_w': self.day_of_week,
+        #     'chislo': str(self.day)[:2],
+        #     'name': self.person.familia,
+        # }
+        return a
+        # return d_o_w, chislo, name
 
     class Meta:
         verbose_name = "Дежурство"

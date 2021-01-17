@@ -22,7 +22,12 @@
 <!--            </tr>-->
 <!--        {% endfor %}-->
 <!--    </table>-->
-
+<div>
+    <p>{% now "Y" %}</p>
+    <p>{% now "F j Y" %}</p>
+    <p>{% now "N, j, Y" %}</p>
+    <p>{% now "N j, Y, P" %}</p>
+</div>
 <table border="1">
         <tr bgcolor="#ccc">
             <td>день недели</td>
@@ -34,9 +39,26 @@
 
                 <td>{{ t.0 }} </td>
                 <td>{{ t.1 }} </td>
-                <td>{{ people }} </td>
+
+                {% empty %}
+                <li>Langs array is empty</li>
 
             </tr>
         {% endfor %}
     </table>
+
+{% with name="Tom" age=29 %}
+    <div>
+        <p>Name: {{ name }}</p>
+        <p>Age: {{ age }}</p>
+    </div>
+{% endwith %}
+
+<ul>
+    {% for n in wtf %}
+    <li>{{ n.0 }} - {{ n.1 }}</li>
+    {% empty %}
+    <li>no nno no</li>
+    {% endfor %}
+</ul>
 {% endblock %}

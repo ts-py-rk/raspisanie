@@ -47,11 +47,11 @@ class Calendar(models.Model):
 
 
 class Month(models.Model):
-    # status = models.ForeignKey(Calendar, on_delete=models.CASCADE)
+    status = models.ForeignKey(Calendar, on_delete=models.CASCADE, editable=False)
     day = models.DateField()
-    day_of_week = models.CharField('День недели', max_length=10)
+    day_of_week = models.CharField('День недели', max_length=10, editable=False)
     person = models.ForeignKey(People, on_delete=models.CASCADE)
-    super = models.ForeignKey(SuperDuty, on_delete=models.CASCADE)
+    super = models.ForeignKey(SuperDuty, on_delete=models.CASCADE, editable=False)
 
     def __str__(self):
         if self.person == None:
@@ -66,3 +66,8 @@ class Month(models.Model):
         verbose_name = "Дежурства в этом месяце"
         verbose_name_plural = "Дежурства в этом месяце"
         ordering = ('id',)
+
+    # def get_title_or_nothing(self):
+    #     if self.type == WEIRD_TYPE:
+    #         return ""
+    #     return self.title

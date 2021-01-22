@@ -1,7 +1,7 @@
 body {
   background-color: #f9e2bc;
   min-width: 1200px;
-  font-family: georgia, serif; 
+  font-family: arial, monospace; 
 }
 
 hr {
@@ -17,10 +17,12 @@ hr {
   background-color: #e79c47;  /* Цвет линии для браузера Firefox и Opera */
   height: 2px;                /* Толщина линии */
 }
+
 a {
   color: #065477;              /* Цвет обычной ссылки */ 
   text-decoration: none;       /* Убираем подчеркивание у ссылок */
 }
+
 a:visited {
   color: #065477;              /* Цвет посещённой ссылки */
 } 
@@ -31,16 +33,19 @@ a:hover {
 }
 
 @font-face {
-  font-family: Brush Script MT;
-  scr:url(../fonts/BRUSHSCI.TTF);
+  font-family: test;
+  src: url("../fonts/Brush_Script.eot");    /* IE9*/
+  src: url("../fonts/Brush_Script.woff"),   /* EDGE  */
+       url("../fonts/Brush_Script.ttf");    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
 }
+
 
 .adm {
   width: 25px;
   height: 25px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
 }
 
 /*div    {border: 1px solid black;}*/
@@ -128,9 +133,9 @@ footer {
 
 .mounth {
   font-size: 50px;
-  font-family: "Brush Script MT";
+  font-family: test;
   color: rgb(6, 84, 119);
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 1.2;
   -ms-transform: rotate(-4.5deg) scaleX(1.4);
   -webkit-transform: rotate(-4.5deg) scaleX(1.4);
@@ -139,7 +144,7 @@ footer {
 }
 
 .table {
-  border-spacing: 0px 0px;
+  border-spacing: 0px 8px;
 }
 
 .day_of_week {
@@ -182,21 +187,21 @@ footer {
   position: absolute;
   font-size: 15px;
   color:  #043d56;
-  right: 25px;
-  bottom: 25px;
+  right: 110px;
+  bottom: 15px;
   text-align: center;
 }
 
 .o_d_t {
   font-size: 20px;
-  font-family: "Brush Script MT";
+  font-family: "test";
   color: rgb(6, 84, 119);
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 1.2;
   -ms-transform: rotate(-1.5deg) scaleX(1.4);
   -webkit-transform: rotate(-2.0deg) scaleX(1.4);
   text-decoration: underline;
-
+  height: 60px;
 }
 
 .o_d_m {
@@ -213,11 +218,12 @@ footer {
 
 .o_d_r {
   font-size: 20px;
-  font-family: "Brush Script MT";
+  font-family: "test";
   color: rgb(6, 84, 119);
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 1.2;
   -ms-transform: rotate(-1.5deg) scaleX(1.4);
   -webkit-transform: rotate(-4.5deg) scaleX(1.4);
   text-decoration: underline;
+  height: 40px;
 }

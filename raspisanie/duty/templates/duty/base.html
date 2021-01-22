@@ -15,18 +15,17 @@
 					<caption class="o_d_t" >
 						<a href="#"><ins>Ответственные дежурные:</ins></a>
 					</caption>
-					<td> <br></td>
 					<tr>
-						<td class='o_d_m'>Январь -</td>
-						<td class='o_d_n'>Иванов</td>
+						<td class='o_d_m'>Январь</td><td>-</td>
+						<td class='o_d_n'>Белкин</td>
 					</tr>
 					<tr>
-						<td class='o_d_m'>Февраль -</td>
-						<td class='o_d_n'>Петров</td>
+						<td class='o_d_m'>Февраль</td>
+						<td class='o_d_n'>Тарынина</td>
 					</tr>
 				</table>
 			</div>
-			<a href="admin/"><img class="adm" src="{% static 'img/admin.png' %}"></a>
+			<a href="/admin"><img class="adm" src="{% static 'img/adm.png' %}"></a>
 		</div>
 	<main class="grid">
 		<div class="left-sidebar"  align="center">
@@ -36,6 +35,7 @@
 		<div class="main">
 {% block content %}{% endblock %}
 		</div>
+
 		<div class="right-sidebar" align="center">
 			<img src="{% static 'img/rightcol.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
 		</div>
@@ -45,14 +45,12 @@
 			<div class="rz">
 				<table  class="table">
 					<caption class="o_d_r">Резерв:</caption>
-					<td> <br></td>
-					<tr><td class='o_d_n'>Иванов</td></tr>
-					<tr><td class='o_d_n'>Петров</td></tr>
-					<tr><td class='o_d_n'>Сидоров</td></tr>
+					<tr><td class='o_d_n'>-</td></tr>
+					<tr><td class='o_d_n'>-</td></tr>
 				</table>
 			</div>
 			<span class="cop">
-				<a href="mailto:ialekseeva@grc.ru" title="Связаться с разработчиком"><img src="{% static 'img/cop.png' %}">
+				<a href="mailto:ialekseeva@grc.ru" title="Связаться с разработчиком"><img src="{% static 'img/cop.png' %}"></a>
 			</span>
 		</div>
 	</footer>

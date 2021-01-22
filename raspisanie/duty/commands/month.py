@@ -105,14 +105,14 @@ for t in table:
 
 
 
-print('читаем базу данных')
-cur.execute("SELECT * FROM duty_month;")
-all_results = cur.fetchall()
-for a_r in all_results:
-    print(a_r)
-
-cur.executemany("INSERT INTO duty_month VALUES(?, ?, ?, ?, ?, ?);", table)
-conn.commit()
+# print('читаем базу данных')
+# cur.execute("SELECT * FROM duty_month;")
+# all_results = cur.fetchall()
+# for a_r in all_results:
+#     print(a_r)
+#
+# cur.executemany("INSERT INTO duty_month VALUES(?, ?, ?, ?, ?, ?);", table)
+# conn.commit()
 
 
 conn.close()

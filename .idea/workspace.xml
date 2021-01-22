@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70ed7be4-05a9-4638-96ad-4d4112e18385" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie.drawio" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1mnVSmAboYJqjzrjJwzcU3HmVUn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/raspisanie/duty" />
+      <recent name="$PROJECT_DIR$/raspisanie" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.month">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="month" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty/commands" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/duty/commands/month.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/raspisanie" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/raspisanie/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty/commands" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/duty/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/duty/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+      <option name="INTERPRETER_PATH" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.month" />
+      <item itemvalue="Python.settings" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.month" />
+        <item itemvalue="Python.settings" />
+        <item itemvalue="Python.views" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70ed7be4-05a9-4638-96ad-4d4112e18385" name="Default Changelist" comment="" />
+      <created>1610129343076</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610129343076</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611218742694">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218742694" />
+    <state x="740" y="244" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1611202656967">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="244" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611202656967" />
+    <state x="626" y="120" width="972" height="594" key="EnvironmentVariablesDialog" timestamp="1611202462706">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="626" y="120" width="972" height="594" key="EnvironmentVariablesDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611202462706" />
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1611218738912">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218738912" />
+    <state width="1899" height="294" key="GridCell.Tab.0.bottom" timestamp="1611307499605">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1419" height="134" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1610983096822" />
+    <state width="1899" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611307499605" />
+    <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610543804438" />
+    <state width="1419" height="134" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610912193665" />
+    <state width="1419" height="319" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1610901954213" />
+    <state width="1899" height="294" key="GridCell.Tab.0.center" timestamp="1611307499605">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1419" height="134" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1610983096821" />
+    <state width="1899" height="294" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611307499605" />
+    <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610543804425" />
+    <state width="1419" height="134" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610912193662" />
+    <state width="1419" height="319" key="GridCell.Tab.0.center/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1610901954210" />
+    <state width="1899" height="294" key="GridCell.Tab.0.left" timestamp="1611307499605">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1419" height="134" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1610983096819" />
+    <state width="1899" height="294" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611307499605" />
+    <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610543804384" />
+    <state width="1419" height="134" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610912193660" />
+    <state width="1419" height="319" key="GridCell.Tab.0.left/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1610901954208" />
+    <state width="1899" height="294" key="GridCell.Tab.0.right" timestamp="1611307499605">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1419" height="134" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1610983096821" />
+    <state width="1899" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611307499605" />
+    <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610543804431" />
+    <state width="1419" height="134" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610912193664" />
+    <state width="1419" height="319" key="GridCell.Tab.0.right/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1610901954211" />
+    <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610391677551">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1610262993067" />
+    <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610391677551" />
+  </component>
+</project>

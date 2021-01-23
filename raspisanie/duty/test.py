@@ -11,10 +11,6 @@ import calendar
 # # # print(date(today, 'F'))
 # # # month = calendar.month_name[1]
 # # # print(month)
-# #
-# # # import mptt
-# # # print(mptt.VERSION)
-# # # # (0, 5, '+dev')
 import pytils
 # # b = pytils.numeral.get_plural(1, u"гвоздь, гвоздя, гвоздей")
 # # print(b)

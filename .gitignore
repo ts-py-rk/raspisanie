@@ -147,3 +147,10 @@ Icon
 # Thumbnails
 ._*
 
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+

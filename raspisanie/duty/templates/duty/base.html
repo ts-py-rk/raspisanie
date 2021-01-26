@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, nitial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
-    <link rel ="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel ="stylesheet" href="{% static 'css/index.css' %}?ver={% now 'u'  %}">
 </head>
 <body>
 		<div class="header">
@@ -50,8 +50,9 @@
 				</table>
 			</div>
 			<span class="cop">
-				<a href="mailto:ialekseeva@grc.ru" title="Связаться с разработчиком"><img src="{% static 'img/cop.png' %}"></a>
-			</span>
+				<a href="mailto:ialekseeva@grc.ru" title="Нашли ошибку? Свяжитесь с разработчиком"><img src="{% static 'img/cop.png' %}"></a>
+				<p>Материалы на данной странице предоставляются "как есть" и не подпадают под действие каких-либо гарантий, явно выраженных или подразумеваемых</p>
+				</span>
 		</div>
 	</footer>
 </body>

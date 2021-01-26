@@ -5,6 +5,8 @@ import pytils
 from .models import Month
 from .models import People
 from .ips import a
+import sqlite3
+
 
 def index(request):
     today = datetime.datetime.now()
@@ -25,39 +27,63 @@ def index(request):
                 strochka.append(imena[im].familia)
         stroki.append(strochka)
 
-    content = {
-        'title': 'Расписание дежурств',
-        'txt': 'Дежурства',
-        'now': now,
-        'wtf': stroki,
-    }
     def client_ip(reguest):
         x_forwardwd_for = request.META.get('HTTP_X_FORWARDED_FOR')
         if x_forwardwd_for:
             ip = x_forwardwd_for.split(',')[0]
         else:
             ip = request.META.get('REMOTE_ADDR')
-
-        for i in a:
-            if i[2] == ip:
-                posetil = f'{i[1]} - {i[0]} - {i[2]}'
-        print(f'Сайт открыл  {datetime.datetime.now()} - {posetil}')
-        print(type(ip))
-        with open('ip.txt', 'a', encoding='utf-8') as bas:
-            bas.write(f"{datetime.datetime.now()} - {posetil} \n")
+        if ip != '172.41.0.174' and ip != '172.41.0.178' and ip != '192.168.88.253':
+        # if ip != '172.41.0.174' and ip != '172.41.0.178':
+            for i in a:
+                if i[2] == ip:
+                    posetitel = f'{i[1]} - {i[0]} - {i[2]}'
+                    vremya = datetime.datetime.now().replace(microsecond=0)
+                    posesenie = f'{vremya} - {posetitel}'
+                else:
+                    posesenie = f'Кто то неизвестный - {ip}'
+            # читаем базу данных
+            conn = sqlite3.connect(r'db.sqlite3')
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM duty_static;")
+            id = int(datetime.datetime.now().timestamp()) - 1611679693
+            logs = [id, posesenie]
+            # добавляем в базу данных
+            cur.execute("INSERT INTO duty_static VALUES(?,?);", logs)
+            conn.commit()
+            conn.close()
         return
+
     client_ip(request)
+    content = {
+        'title': 'Расписание дежурств',
+        'txt': 'Дежурства',
+        'now': now,
+        'wtf': stroki,
+    }
     return render(request, 'duty/index.html', content)
 
 
 def stat(request):
-
+    x_forwardwd_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwardwd_for:
+        ip = x_forwardwd_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    if ip == '172.41.0.174' or ip == '172.41.0.178' or ip == '192.168.88.253':
+    # if ip == '172.41.0.174' or ip == '172.41.0.178':
+        conn = sqlite3.connect(r'db.sqlite3')
+        cur = conn.cursor()
+        cur.execute("SELECT * FROM duty_static;")
+        all_results = cur.fetchall()
+        conn.close()
+        title = 'Статистика посещений'
+    else:
+        all_results = [['','Error 404'],[]]
+        title = 'Страница не найдена'
     content = {
-        'spisok' : [
-    '2021 - 01 - 26 13:27: 46.560003 - С4515 - Тихоненок - 172.41.0.174',
-    '2021 - 01 - 26  13: 28:53.120967 - С4513 - Алексеева - 172.41.0.178',
-    '2021 - 01 - 26  14: 10:23.572228 - C3893 - Сосина - 172.41.0.152',
-    ]
+        'zagolovok': title,
+        'spisok' : all_results,
     }
 
     return render(request, 'duty/stat.html', content)

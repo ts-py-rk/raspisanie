@@ -67,7 +67,15 @@ class Month(models.Model):
         verbose_name_plural = "Дежурства в этом месяце"
         ordering = ('id',)
 
-    # def get_title_or_nothing(self):
-    #     if self.type == WEIRD_TYPE:
-    #         return ""
-    #     return self.title
+
+class Static(models.Model):
+    log = models.CharField('Посещение', max_length=100)
+
+    def __str__(self):
+        if self.log == None:
+            return "log IS NULL"
+        return self.log
+
+    class Meta:
+        verbose_name = "Запись посещения"
+        verbose_name_plural = "Записи посещений"

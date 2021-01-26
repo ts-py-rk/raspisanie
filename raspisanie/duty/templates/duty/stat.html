@@ -1,0 +1,14 @@
+{% extends 'duty/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+            {% for sp in spisok %}
+                <p style="font-size: 15px;">{{ sp }}</p>
+            {% endfor %}
+
+{% endblock %}

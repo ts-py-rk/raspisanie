@@ -48,3 +48,16 @@ def index(request):
         return
     client_ip(request)
     return render(request, 'duty/index.html', content)
+
+
+def stat(request):
+
+    content = {
+        'spisok' : [
+    '2021 - 01 - 26 13:27: 46.560003 - С4515 - Тихоненок - 172.41.0.174',
+    '2021 - 01 - 26  13: 28:53.120967 - С4513 - Алексеева - 172.41.0.178',
+    '2021 - 01 - 26  14: 10:23.572228 - C3893 - Сосина - 172.41.0.152',
+    ]
+    }
+
+    return render(request, 'duty/stat.html', content)

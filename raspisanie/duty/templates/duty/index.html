@@ -21,13 +21,17 @@
                         <td class="day_of_week">{{ t.0 }}</td>
                         <td class="day">{{ t.1 }}</td>
                         <td class="name">{{ t.2 }}</td></tr>
-                        {% if t.0 == "пт" and t.1 != 29 %}
+                        {% if t.0 == "пт" and t.1 != 19 %}
                             <tr><td colspan="3"><hr></td></tr>
                         {% endif %}
+                        {% if t.0 == "сб" %}
+                            <tr><td colspan="3"><hr></td></tr>
+                        {% endif %}
+
                 {% endif %}
             {% endfor %}
-        <tr>
-            <td colspan="3"><hr></td>
-        </tr>
+<!--        <tr>-->
+<!--            <td colspan="3"><hr></td>-->
+<!--        </tr>-->
     </table>
 {% endblock %}

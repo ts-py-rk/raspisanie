@@ -10,45 +10,45 @@ cur = conn.cursor()
 # one_result = cur.fetchone()
 # print(one_result)
 
-print('читаем базу данных')
-cur.execute("SELECT * FROM duty_people;")
-all_results = cur.fetchall()
-for a_r in all_results:
-    print(a_r)
-
-print('добавляем в базу данных')
-
-
-cur.execute("""INSERT INTO duty_people(id, familia, imya, otche)
-   VALUES('5', 'Alex', 'Smith', 'male');""")
-
-user = ['6', 'qqq', 'www', 'eee']
-cur.execute("INSERT INTO duty_people VALUES(?, ?, ?, ?);", user)
-
-more_users = [['7', 'Peter', 'Parker', 'Male'],
-              ['8', 'Bruce', 'Wayne', 'male']]
-cur.executemany("INSERT INTO duty_people VALUES(?, ?, ?, ?);", more_users)
-
-print('читаем базу данных')
-cur.execute("SELECT * FROM duty_people;")
-all_results = cur.fetchall()
-for a_r in all_results:
-    print(a_r)
-print(len(all_results))
-
-
-print('удаляем лишнее')
-for i in range(5, (len(all_results)+2)):
-    cur.execute(f"DELETE FROM duty_people WHERE id='{i}';")
-
-
-print('читаем базу данных')
-cur.execute("SELECT * FROM duty_people;")
-all_results = cur.fetchall()
-print(len(all_results))
-for a_r in all_results:
-    print(a_r)
-conn.commit()
+# print('читаем базу данных')
+# cur.execute("SELECT * FROM duty_people;")
+# all_results = cur.fetchall()
+# for a_r in all_results:
+#     print(a_r)
+#
+# print('добавляем в базу данных')
+#
+#
+# cur.execute("""INSERT INTO duty_people(id, familia, imya, otche)
+#    VALUES('5', 'Alex', 'Smith', 'male');""")
+#
+# user = ['6', 'qqq', 'www', 'eee']
+# cur.execute("INSERT INTO duty_people VALUES(?, ?, ?, ?);", user)
+#
+# more_users = [['7', 'Peter', 'Parker', 'Male'],
+#               ['8', 'Bruce', 'Wayne', 'male']]
+# cur.executemany("INSERT INTO duty_people VALUES(?, ?, ?, ?);", more_users)
+#
+# print('читаем базу данных')
+# cur.execute("SELECT * FROM duty_people;")
+# all_results = cur.fetchall()
+# for a_r in all_results:
+#     print(a_r)
+# print(len(all_results))
+#
+#
+# print('удаляем лишнее')
+# for i in range(5, (len(all_results)+2)):
+#     cur.execute(f"DELETE FROM duty_people WHERE id='{i}';")
+#
+#
+# print('читаем базу данных')
+# cur.execute("SELECT * FROM duty_people;")
+# all_results = cur.fetchall()
+# print(len(all_results))
+# for a_r in all_results:
+#     print(a_r)
+# conn.commit()
 
 
 import datetime
@@ -87,10 +87,10 @@ for i in c.itermonthdays(god, mes):
             # da_of_we.append(day_of_week)
             stro.append(i)
             stro.append(dayy)
-            stro.append(1)
-            stro.append(1)
-            stro.append(2)
             stro.append(day_of_week)
+            stro.append(35)
+            stro.append(1)
+            stro.append(1)
             table.append(stro)
 
         elif n_d == 5:
@@ -105,14 +105,14 @@ for t in table:
 
 
 
-# print('читаем базу данных')
-# cur.execute("SELECT * FROM duty_month;")
-# all_results = cur.fetchall()
-# for a_r in all_results:
-#     print(a_r)
-#
-# cur.executemany("INSERT INTO duty_month VALUES(?, ?, ?, ?, ?, ?);", table)
-# conn.commit()
+print('читаем базу данных')
+cur.execute("SELECT * FROM duty_month;")
+all_results = cur.fetchall()
+for a_r in all_results:
+    print(a_r)
+
+cur.executemany("INSERT INTO duty_month VALUES(?, ?, ?, ?, ?, ?);", table)
+conn.commit()
 
 
 conn.close()

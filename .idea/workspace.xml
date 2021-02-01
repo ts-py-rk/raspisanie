@@ -10,59 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70ed7be4-05a9-4638-96ad-4d4112e18385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/raspisanie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/raspisanie.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/commands/month.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/commands/month.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/commands/otdel.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/commands/otdel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/commands/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/commands/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/ips.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/ips.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0002_auto_20210110_0734.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0002_auto_20210110_0734.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0003_delete_genre.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0003_delete_genre.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0004_auto_20210123_1401.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0004_auto_20210123_1401.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/stat.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/stat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/duty/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/ip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/ip.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/start.txt" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/start.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.eot" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.woff" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/adm.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/adm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/cop.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/cop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/grc.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/grc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/leftcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/leftcol.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/niz.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/niz.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="70ed7be4-05a9-4638-96ad-4d4112e18385" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,9 +159,12 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="ShConfigurationType">
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="" />
       <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
       <option name="INTERPRETER_PATH" value="$PROJECT_DIR$" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <method v="2" />

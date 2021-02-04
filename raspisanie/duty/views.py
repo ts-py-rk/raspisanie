@@ -33,15 +33,22 @@ def index(request):
             ip = x_forwardwd_for.split(',')[0]
         else:
             ip = request.META.get('REMOTE_ADDR')
+        vremya = datetime.datetime.now().replace(microsecond=0)
+        print(f'ip = {vremya} - {ip}')
         if ip != '172.41.0.174' and ip != '172.41.0.178' and ip != '192.168.88.253':
         # if ip != '172.41.0.174' and ip != '172.41.0.178':
+        # if ip != '172.41.0.174':
+        # if ip != '172.41.0.178':
             for i in a:
                 if i[2] == ip:
-                    posetitel = f'{i[1]} - {i[0]} - {i[2]}'
-                    vremya = datetime.datetime.now().replace(microsecond=0)
+                    posetitel = f'{i[1]} - {i[0]}'
                     posesenie = f'{vremya} - {posetitel}'
+                    # print(f'posetitel = {posetitel}')
+                    # print(f'vremya = {vremya}')
+                    print(f'posesenie = {posesenie}')
+                    break
                 else:
-                    posesenie = f'Кто то неизвестный - {ip}'
+                    posesenie = f'{vremya} - Кто то неизвестный - {ip}'
             # читаем базу данных
             conn = sqlite3.connect(r'db.sqlite3')
             cur = conn.cursor()
@@ -87,3 +94,33 @@ def stat(request):
     }
 
     return render(request, 'duty/stat.html', content)
+
+
+def news(request):
+    title = 'Новости'
+    content = {
+        'title': title,
+    }
+    return render(request, 'duty/news.html', content)
+
+def otvet(request):
+    title = 'Ответственные дежурные'
+    content = {
+        'title': title,
+    }
+    return render(request, 'duty/otvet.html', content)
+
+def rules(request):
+    title = 'Положение о дежурстве'
+    content = {
+        'title': title,
+    }
+    return render(request, 'duty/rules.html', content)
+
+def help(request):
+    title = 'Справка'
+    content = {
+        'title': title,
+    }
+    return render(request, 'duty/help.html', content)
+

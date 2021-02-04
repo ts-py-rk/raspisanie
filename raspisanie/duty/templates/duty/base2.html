@@ -60,19 +60,7 @@
 	</div>
 
 	<main class="grid">
-
-		<div class="left-sidebar"  align="center">
-			<img src="{% static 'img/leftcol.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
-		</div>
-
-		<div class="main">
 			{% block content %}{% endblock %}
-		</div>
-
-		<div class="right-sidebar" align="center">
-			<img src="{% static 'img/rightcol.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
-		</div>
-
 	</main>
 	
 	<footer>
@@ -80,16 +68,8 @@
 			<div class="rz">
 				<table  class="table">
 					<caption class="o_d_r">Резерв:</caption>
-					<tr>
-						<td class='o_d_n'>
-							<a href="/">-</a>
-						</td>
-					</tr>
-					<tr>
-						<td class='o_d_n'>
-							<a href="stat">-</a>
-						</td>
-					</tr>
+					<tr><td class='o_d_n'><a href="/">-</a></td></tr>
+					<tr><td class='o_d_n'><a href="stat">-</a></td></tr>
 				</table>
 			</div>
 			<span class="cop">
@@ -97,7 +77,7 @@
 					<img src="{% static 'img/cop.png' %}">
 				</a>
 				<p>Материалы на данной странице предоставляются "как есть" и не подпадают под действие каких-либо гарантий, явно выраженных или подразумеваемых</p>
-			</span>
+				</span>
 		</div>
 	</footer>
 </body>

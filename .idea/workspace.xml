@@ -10,7 +10,64 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70ed7be4-05a9-4638-96ad-4d4112e18385" name="Default Changelist" comment="" />
+    <list default="true" id="70ed7be4-05a9-4638-96ad-4d4112e18385" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/raspisanie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/raspisanie.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/commands/month.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/commands/month.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/commands/otdel.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/commands/otdel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/commands/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/commands/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/ips.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/ips.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0002_auto_20210110_0734.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0002_auto_20210110_0734.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0003_delete_genre.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0003_delete_genre.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0004_auto_20210123_1401.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0004_auto_20210123_1401.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/stat.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/stat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/raspisanie/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/raspisanie/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/start.txt" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/start.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.eot" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.woff" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/adm.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/adm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/cop.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/cop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/grc.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/grc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/leftcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/leftcol.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/niz.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/niz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/raspisanie.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Новая папка/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +98,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/raspisanie/duty/templates/duty" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -52,7 +109,7 @@
       <recent name="$PROJECT_DIR$/raspisanie" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.month">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="raspisanie" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,7 +138,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty/commands" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -177,8 +234,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.month" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.settings" />
         <item itemvalue="Python.views" />
       </list>
@@ -202,18 +259,18 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611218742694">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="311" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612112485148">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="311" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1612112485148" />
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218742694" />
     <state x="740" y="244" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1611202656967">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -227,42 +284,50 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218738912" />
-    <state width="1419" height="231" key="GridCell.Tab.0.bottom" timestamp="1611680818287">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1612202856147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="134" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1610983096822" />
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611663335447" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1612202856147" />
+    <state width="936" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
+    <state width="2237" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
     <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610543804438" />
-    <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611680818287" />
+    <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523994" />
     <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723783" />
-    <state width="1419" height="231" key="GridCell.Tab.0.center" timestamp="1611680818275">
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1612202856144">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="134" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1610983096821" />
-    <state width="1877" height="291" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611663335447" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1612202856144" />
+    <state width="936" height="293" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
+    <state width="2237" height="293" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
     <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610543804425" />
-    <state width="1419" height="231" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611680818275" />
+    <state width="1419" height="231" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523987" />
     <state width="1419" height="231" key="GridCell.Tab.0.center/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723780" />
-    <state width="1419" height="231" key="GridCell.Tab.0.left" timestamp="1611680818262">
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1612202856143">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="134" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1610983096819" />
-    <state width="1877" height="291" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611663335447" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1612202856143" />
+    <state width="936" height="293" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
+    <state width="2237" height="293" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
     <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610543804384" />
-    <state width="1419" height="231" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611680818262" />
+    <state width="1419" height="231" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523979" />
     <state width="1419" height="231" key="GridCell.Tab.0.left/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723779" />
-    <state width="1419" height="231" key="GridCell.Tab.0.right" timestamp="1611680818278">
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1612202856146">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="134" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1610983096821" />
-    <state width="1877" height="291" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611663335447" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1612202856146" />
+    <state width="936" height="293" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
+    <state width="2237" height="293" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
     <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610543804431" />
-    <state width="1419" height="231" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611680818278" />
+    <state width="1419" height="231" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523989" />
     <state width="1419" height="231" key="GridCell.Tab.0.right/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723782" />
     <state x="876" y="251" key="RollbackChangesDialog" timestamp="1611652528671">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="876" y="251" key="RollbackChangesDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611652528671" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1612112358487">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1612112358487" />
     <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610391677551">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

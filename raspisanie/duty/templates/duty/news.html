@@ -1,0 +1,22 @@
+{% extends 'duty/base2.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="left-col"  align="center">
+	<img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+
+<div class="main">
+    <div align="center" class="mounth">Новости</div>
+</div>
+
+<div class="right-col" align="center">
+    <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+
+{% endblock %}

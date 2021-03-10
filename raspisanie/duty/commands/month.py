@@ -88,7 +88,7 @@ for i in c.itermonthdays(god, mes):
             stro.append(i)
             stro.append(dayy)
             stro.append(day_of_week)
-            stro.append(35)
+            stro.append(1)
             stro.append(1)
             stro.append(1)
             table.append(stro)

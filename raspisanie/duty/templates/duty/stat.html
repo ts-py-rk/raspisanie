@@ -2,16 +2,16 @@
 {% load static %}
 
 {% block title %}
-    {{ zagolovok }}
+    {{ title }}
 {% endblock %}
 
 {% block content %}
 
-<div align="center" class="mounth">Статистика</div>
+<div align="center" class="mounth">{{ title }}</div>
         
 	{% for sp in spisok %}
 
-	    <p style="font-size: 15px; text-align: center; position: relative; top: 25px;">{{ sp.1 }}</p>
+	    <p style="left: 50px; font-size: 15px; text-align: left; position: relative; top: 25px;">{{ sp.1 }}</p>
 	    
 	{% endfor %}
 

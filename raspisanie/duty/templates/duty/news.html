@@ -7,16 +7,26 @@
 
 {% block content %}
 
-<div class="left-col"  align="center">
-	<img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
-</div>
+    <div class="left-col"  align="center">
+        <img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+    </div>
 
-<div class="main">
-    <div align="center" class="mounth">Новости</div>
-</div>
+    <div class="main">
+        <div align="center" class="mounth">Новости</div>
 
-<div class="right-col" align="center">
-    <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
-</div>
+        <p> - На справочной странице
+            <a href="help" title="Справка для ответственного дежурного">
+                <img src="{% static 'img/help.svg' %}"></a> добавлена информация для ответственных дежурных.</p>
+
+        <p> - В меню добавлена возможность скачать ярлык
+            <a href="{% static 'Дежурства.url' %}" title="Скачать ярлык">
+                <img src="{% static 'img/lnk.png' %}" height="25"></a>, чтобы не потерять это расписание. </p>
+
+        <p></p>
+    </div>
+
+    <div class="right-col" align="center">
+        <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+    </div>
 
 {% endblock %}

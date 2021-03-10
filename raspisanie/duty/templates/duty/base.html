@@ -16,14 +16,14 @@
 					<a href="otvet">Ответственные дежурные:</a>
 				</caption>	
 				<tr>
-					<td class='o_d_m'>Февраль</td>
-					<td class="tire">-</td>
-					<td class='o_d_n'>Тарынина</td>
-				</tr>
-				<tr>
 					<td class='o_d_m'>Март</td>
 					<td class="tire">-</td>
 					<td class='o_d_n'>Рябин</td>
+				</tr>
+				<tr>
+					<td class='o_d_m'>Апрель</td>
+					<td class="tire">-</td>
+					<td class='o_d_n'>Алексеева</td>
 				</tr>
 			</table>
 		</div>
@@ -47,16 +47,26 @@
 				<img src="{% static 'img/help.svg' %}">
 			</a>
 		</div>
-		<div class="stat">
-			<a href="#" title="#">
-				<img src="{% static 'img/statistics.svg' %}">
-			</a>
-		</div>			
 		<div class="adm">
-			<a href="/admin" title="Администратор">
+			<a href="/admin" title="Администрирование">
 				<img src="{% static 'img/admin.svg' %}">
 			</a>
 		</div>
+
+		{% if ip in good_ips %}
+			<div class="stat">
+				<a href="/stat" title="#">
+					<img src="{% static 'img/statistics.svg' %}">
+				</a>
+			</div>
+		{% else %}
+			<div class="lnk">
+				<a href="{% static 'Дежурства.url' %}" title="Скачать ярлык">
+					<img src="{% static 'img/lnk.png' %}" height="28">
+				</a>
+			</div>
+		{% endif %}
+
 	</div>
 
 	<main class="grid">
@@ -80,16 +90,8 @@
 			<div class="rz">
 				<table  class="table">
 					<caption class="o_d_r">Резерв:</caption>
-					<tr>
-						<td class='o_d_n'>
-							<a href="/">-</a>
-						</td>
-					</tr>
-					<tr>
-						<td class='o_d_n'>
-							<a href="stat">-</a>
-						</td>
-					</tr>
+					<tr><td class='o_d_n'>-</td></tr>
+					<tr><td class='o_d_n'>-</td></tr>
 				</table>
 			</div>
 			<span class="cop">

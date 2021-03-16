@@ -146,26 +146,34 @@
 # import .models
 
 
-import sqlite3
-import datetime
-from random import randint
-print('читаем базу данных')
-conn = sqlite3.connect(r'../../db.sqlite3')
-cur = conn.cursor()
-cur.execute("SELECT * FROM duty_static;")
-all_results = cur.fetchall()
-print(f'Выводим все значения - {all_results}')
-for a_r in all_results:
-    print(f'a_r = {a_r}')
+# import sqlite3
+# import datetime
+# from random import randint
+# print('читаем базу данных')
+# conn = sqlite3.connect(r'../../db.sqlite3')
+# cur = conn.cursor()
+# cur.execute("SELECT * FROM duty_static;")
+# all_results = cur.fetchall()
+# print(f'Выводим все значения - {all_results}')
+# for a_r in all_results:
+#     print(f'a_r = {a_r}')
+#
+# id = int(datetime.datetime.now().timestamp()) - 1611679693
+# log = randint(1, 1234)
+# logs = [id, log]
+# print(id)
+# print(f'добавляем в базу данных')
+# cur.execute("INSERT INTO duty_static VALUES(?,?);", logs)
+# conn.commit()
+#
+#
+#
+# conn.close()
 
-id = int(datetime.datetime.now().timestamp()) - 1611679693
-log = randint(1, 1234)
-logs = [id, log]
-print(id)
-print(f'добавляем в базу данных')
-cur.execute("INSERT INTO duty_static VALUES(?,?);", logs)
-conn.commit()
+import hashlib
+ip = b'172.41.0.174'
+# hash = hashlib.sha1(b'172.41.0.174')
+hash = hashlib.sha1(ip)
+hz = hash.hexdigest()
+print(hz)
 
-
-
-conn.close()

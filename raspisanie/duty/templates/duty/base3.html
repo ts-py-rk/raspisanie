@@ -9,25 +9,27 @@
     <link rel ="stylesheet" href="{% static 'css/style.css' %}?ver={% now 'u'  %}">
 </head>
 <body>
-		<div class="header">
-		<div class="od">
-			<table  class="table" align="center">
-				<caption class="o_d_t" >
-					<a href="{% url 'otv' %}">Ответственные дежурные:</a>
-				</caption>	
-				<tr>
-					<td class='o_d_m'>Март</td>
-					<td class="tire">-</td>
-					<td class='o_d_n'>Рябин</td>
-				</tr>
-				<tr>
-					<td class='o_d_m'>Апрель</td>
-					<td class="tire">-</td>
-					<td class='o_d_n'>Алексеева</td>
-				</tr>
-			</table>
+		<div class="headerN">
+			<img src="{% static 'img/45LET.png' %}" height="80%" >
+		<div class="od" align="center">
+
+<!--			<table  class="table" align="center">-->
+<!--				<caption class="o_d_t" >-->
+<!--					<a href="{% url 'otv' %}">Ответственные дежурные:</a>-->
+<!--				</caption>	-->
+<!--				<tr>-->
+<!--					<td class='o_d_m'>Март</td>-->
+<!--					<td class="tire">-</td>-->
+<!--					<td class='o_d_n'>Рябин</td>-->
+<!--				</tr>-->
+<!--				<tr>-->
+<!--					<td class='o_d_m'>Апрель</td>-->
+<!--					<td class="tire">-</td>-->
+<!--					<td class='o_d_n'>Алексеева</td>-->
+<!--				</tr>-->
+<!--			</table>-->
 		</div>
-		<div class="home">
+<div class="home">
 			<a href="{% url 'index' %}" title="Главная страница">
 				<img src="{% static 'img/home.svg' %}">
 			</a>
@@ -70,36 +72,24 @@
 	</div>
 
 	<main class="grid">
-
-		<div class="left-sidebar"  align="center">
-			<img src="{% static 'img/leftcol.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
-		</div>
-
-		<div class="main">
 			{% block content %}{% endblock %}
-		</div>
-
-		<div class="right-sidebar" align="center">
-			<img src="{% static 'img/rightcol.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
-		</div>
-
 	</main>
 	
 	<footer>
 		<div class="pod">
 			<div class="rz">
-				<table  class="table">
-					<caption class="o_d_r">Резерв:</caption>
-					<tr><td class='o_d_n'>-</td></tr>
-					<tr><td class='o_d_n'>-</td></tr>
-				</table>
+<!--				<table  class="table">-->
+<!--					<caption class="o_d_r">Резерв:</caption>-->
+<!--					<tr><td class='o_d_n'>-</td></tr>-->
+<!--					<tr><td class='o_d_n'>-</td></tr>-->
+<!--				</table>-->
 			</div>
 			<span class="cop">
 				<a href="mailto:ialekseeva@grc.ru" title="Нашли ошибку? Свяжитесь с разработчиком">
 					<img src="{% static 'img/cop.png' %}">
 				</a>
 				<p>Материалы на данной странице предоставляются "как есть" и не подпадают под действие каких-либо гарантий, явно выраженных или подразумеваемых</p>
-			</span>
+				</span>
 		</div>
 	</footer>
 </body>

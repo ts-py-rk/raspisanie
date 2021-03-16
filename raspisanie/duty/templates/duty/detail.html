@@ -1,0 +1,66 @@
+{% extends 'duty/base3.html' %}
+{% load static %}
+
+{% block title %}
+    {{ article.article_title }}
+{% endblock %}
+
+{% block content %}
+<div class="left-col"  align="center">
+    <img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+
+<div class="main">
+    <div align="center" class="mounth">
+        {% if article.article_title == "В разделе 'Новости' теперь можно..." %}
+            Новые новости
+        {% elif article.article_title == "Участок печати корпуса 6 закрыт" %}
+            Участок закрыт
+
+        {% else %}
+            {{ article.article_title }}
+        {% endif %}
+
+    </div>
+    <p>{{article.article_text}}</p>
+    <!--<em>{{article.pub_date}}</em>-->
+    <hr>
+
+    {% if latest_comments_list %}
+    Комментарии (новые сверху)
+        {% for c in latest_comments_list %}
+            <p>
+                {% if ip in good_ips %}
+
+                        {% for ip in ips %}
+                            {% if c.comment_ip in ip %}
+                                <strong title="{{ ip.0 }}">{{c.author_name}}</strong>:
+                            {% endif %}
+                        {% endfor %}
+
+                {% else %}
+                    <strong>{{c.author_name}}:</strong>
+                {% endif %}
+                <i>{{c.comment_text}}</i>
+            </p>
+        {% endfor %}
+    {% else %}
+    Комментариев нет
+    {% endif %}
+    <hr>
+    <form action="{% url 'leave_comment' article.id %}" method="POST">
+        {% csrf_token %}
+        <input type="text" required placeholder="Ваше имя" name="name"><br>
+        <textarea name="text" required="" placeholder="Текст коментария" cols="30" rows="10"></textarea><br>
+        <button type="submit">Оставить комментарий</button>
+        <input type="hidden" name="send" value="{{ ip }}">
+    </form>
+    <hr>
+    <a href="{% url 'news' %}">…назад к списку новостей</a><br>
+</div>
+
+<div class="right-col" align="center">
+    <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+{% endblock %}
+

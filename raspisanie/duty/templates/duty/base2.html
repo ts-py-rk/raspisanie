@@ -13,7 +13,7 @@
 		<div class="od">
 			<table  class="table" align="center">
 				<caption class="o_d_t" >
-					<a href="otvet">Ответственные дежурные:</a>
+					<a href="{% url 'otv' %}">Ответственные дежурные:</a>
 				</caption>	
 				<tr>
 					<td class='o_d_m'>Март</td>
@@ -27,35 +27,35 @@
 				</tr>
 			</table>
 		</div>
-		<div class="home">
-			<a href="/" title="Главная страница">
+<div class="home">
+			<a href="{% url 'index' %}" title="Главная страница">
 				<img src="{% static 'img/home.svg' %}">
 			</a>
 		</div>
 		<div class="news">
-			<a href="news" title="Новости">
+			<a href="{% url 'news' %}" title="Новости">
 				<img  style="height: 40px;" src="{% static 'img/news.svg' %}">
 			</a>
 		</div>
 		<div class="instr">
-			<a href="rules" title="Положение о дежурстве">
+			<a href="{% url 'rules' %}" title="Положение о дежурстве">
 				<img src="{% static 'img/polozenie.svg' %}">
 			</a>
 		</div>
 		<div class="help">
-			<a href="help" title="Справка для ответственного дежурного">
+			<a href="{% url 'help' %}" title="Справка для ответственного дежурного">
 				<img src="{% static 'img/help.svg' %}">
 			</a>
 		</div>
 		<div class="adm">
-			<a href="/admin" title="Администратор">
+			<a href="{% url 'admin:index' %}" title="Администрирование">
 				<img src="{% static 'img/admin.svg' %}">
 			</a>
 		</div>
 
 		{% if ip in good_ips %}
 			<div class="stat">
-				<a href="/stat" title="#">
+				<a href="{% url 'statistics' %}" title="#">
 					<img src="{% static 'img/statistics.svg' %}">
 				</a>
 			</div>

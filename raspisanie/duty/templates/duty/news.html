@@ -1,4 +1,4 @@
-{% extends 'duty/base2.html' %}
+{% extends 'duty/base3.html' %}
 {% load static %}
 
 {% block title %}
@@ -13,16 +13,18 @@
 
     <div class="main">
         <div align="center" class="mounth">Новости</div>
-
+        {% if test %}
+            {% for t in test %}
+                <p> - <a style="text-decoration: underline;" href="{% url 'detail' t.id %}">{{t.article_title}}</a></p>
+            {% endfor %}
+        {% else %}
+        {% endif %}
         <p> - На справочной странице
             <a href="help" title="Справка для ответственного дежурного">
                 <img src="{% static 'img/help.svg' %}"></a> добавлена информация для ответственных дежурных.</p>
-
         <p> - В меню добавлена возможность скачать ярлык
             <a href="{% static 'Дежурства.url' %}" title="Скачать ярлык">
                 <img src="{% static 'img/lnk.png' %}" height="25"></a>, чтобы не потерять это расписание. </p>
-
-        <p></p>
     </div>
 
     <div class="right-col" align="center">

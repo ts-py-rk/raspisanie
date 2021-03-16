@@ -1,18 +1,25 @@
+from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render
-from django.contrib import admin
+from django.urls import reverse
+from .models import Article
 import datetime
 import pytils
 from .models import Month
 from .models import People
 from .ips import a
 import sqlite3
+import hashlib
 
 good_ips = [
     '172.41.0.174',     # Я
     '172.41.0.178',     # Ирина
-    '192.168.88.253',   #
-    '10.0.0.100',       #
-    '10.0.0.5',         #
+    '192.168.88.253',   # macbook
+    '192.168.88.227',   # kodachi
+    '10.0.0.100',       # Ирина vpn
+    '10.0.0.5',         # macbook vpn
+    '10.0.0.3',         # kodachi vpn
+    '10.0.0.2',         # iphone vpn
+    '127.0.0.1',        # localhost
 ]
 ip_otv_de = [
     '172.41.0.167',     # Рябин
@@ -51,6 +58,15 @@ def client_ip(request, pages):
         conn.close()
     return
 
+def name(ip):
+    for i in a:
+        if ip in i:
+            imya = i[0]
+            break
+        else:
+            imya = 'error'
+    return imya
+
 def index(request):
     ip = iipp(request)
     today = datetime.datetime.now()
@@ -81,7 +97,6 @@ def index(request):
     client_ip(request, content['title'])
     return render(request, 'duty/index.html', content)
 
-
 def stat(request):
     ip = iipp(request)
     if ip in good_ips:
@@ -90,25 +105,33 @@ def stat(request):
         cur.execute("SELECT * FROM duty_static;")
         all_results = cur.fetchall()
         conn.close()
+        title = 'Статистика'
     else:
         all_results = [['','Error 404'],[]]
+        title = 'Error 404'
+    all_results.reverse()
     content = {
-        'title': 'Error 404',
+        'title': title,
         'spisok' : all_results,
+        # 'spisok' : all_results[-50:],
         'ip': ip,
+        'hz': hashlib.sha1(b'{b}'),
         'good_ips': good_ips,
     }
     client_ip(request, content['title'])
     return render(request, 'duty/stat.html', content)
 
-
 def news(request):
     ip = iipp(request)
+    list = Article.objects.order_by('-pub_date')[:5]
+
     content = {
         'title': 'Новости',
         'ip': ip,
         'good_ips': good_ips,
+        'test': list,
     }
+
     client_ip(request, content['title'])
     return render(request, 'duty/news.html', content)
 
@@ -147,4 +170,56 @@ def help(request):
         content['tit'] = 'Пароль только для ответственных дежурных'
     client_ip(request, content['title'])
     return render(request, 'duty/help.html', content)
+#
+def detail(request, article_id):
+    ip = iipp(request)
+    user = name(ip)
+    try:
+        ar = Article.objects.get(id = article_id)
+    except:
+        raise Http404('Статья не найдена')
+    latest_comments_list = ar.comment_set.order_by('-id')[:10]
+    content = {
+        'article': ar,
+        'latest_comments_list': latest_comments_list,
+        'title': ar.article_title,
+        'ip': ip,
+        'hz': hashlib.sha1(ip.encode()).hexdigest(),
+        'ips': a,
+        'good_ips': good_ips,
+        'user': user,
+    }
+    print(content['hz'])
+    client_ip(request, content['title'])
+    return render(request, 'duty/detail.html', content)
 
+# def detail(request, article_id):
+#     ip = iipp(request)
+#     user = name(ip)
+#     try:
+#         ar = Article.objects.get(id = article_id)
+#     except:
+#         raise Http404('Статья не найдена')
+#     latest_comments_list = ar.comment_set.order_by('-id')[:10]
+#     content = {
+#         'article': ar,
+#         'latest_comments_list': latest_comments_list,
+#         'title': ar.article_title,
+#         'ip': ip,
+#         'hz': hashlib.sha1(b'{ip}'),
+#         'ips': a,
+#         'good_ips': good_ips,
+#         'user': user,
+#     }
+#     client_ip(request, content['title'])
+#     return render(request, 'duty/detail.html', content)
+
+def leave_comment(request, article_id):
+    try:
+        ar = Article.objects.get(id=article_id)
+    except:
+        raise Http404('Статья не найдена')
+
+    ar.comment_set.create(author_name = request.POST['name'], comment_text = request.POST['text'], comment_ip = request.POST['send'])
+
+    return HttpResponseRedirect(reverse('detail', args=(ar.id,)))

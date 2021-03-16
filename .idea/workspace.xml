@@ -61,22 +61,28 @@
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/adm.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/adm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/admin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/admin.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/cop.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/cop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/fon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/fon.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/grc.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/grc.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/help.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/help.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/help_pre.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/help_pre.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/home.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/lb1n.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/lb1n.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/leftcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/leftcol.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/lm1n.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/lm1n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/lnk.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/lnk.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/news.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/news.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/niz.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/niz.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/pb1n.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/pb1n.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/pm1n.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/pm1n.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/poloz.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/poloz.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/polozenie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/polozenie.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/polozenie.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/polozenie.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/statistics.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/statistics.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/video/help.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/video/help.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/Дежурства.url" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/Дежурства.url" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,19 +113,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="F:/raspisanie" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/raspisanie/duty/templates/duty" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/raspisanie/duty/templates/duty" />
+      <recent name="G:\raspisanie\raspisanie\duty\templates\duty" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/raspisanie/duty" />
       <recent name="$PROJECT_DIR$/raspisanie" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\raspisanie\raspisanie\duty\templates\duty" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.month">
+  <component name="RunManager" selected="Python.test">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="raspisanie" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,8 +251,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.month" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.month" />
         <item itemvalue="Python.settings" />
         <item itemvalue="Python.views" />
       </list>
@@ -295,46 +302,47 @@
     </state>
     <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218738912" />
     <state x="2602" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1769.1080@1920.0.1769.1080" timestamp="1614750134304" />
-    <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1614721960839">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="226" key="GridCell.Tab.0.bottom" timestamp="1615879629269">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614721960839" />
     <state width="936" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="2237" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
+    <state width="1899" height="226" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
     <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610543804438" />
     <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523994" />
     <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723783" />
-    <state width="1419" height="215" key="GridCell.Tab.0.center" timestamp="1614721960833">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="226" key="GridCell.Tab.0.center" timestamp="1615879629269">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614721960833" />
     <state width="936" height="293" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="2237" height="293" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
+    <state width="1899" height="226" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
     <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610543804425" />
     <state width="1419" height="231" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523987" />
     <state width="1419" height="231" key="GridCell.Tab.0.center/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723780" />
-    <state width="1419" height="215" key="GridCell.Tab.0.left" timestamp="1614721960830">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="226" key="GridCell.Tab.0.left" timestamp="1615879629269">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614721960830" />
     <state width="936" height="293" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="2237" height="293" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
+    <state width="1899" height="226" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
     <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610543804384" />
     <state width="1419" height="231" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523979" />
     <state width="1419" height="231" key="GridCell.Tab.0.left/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723779" />
-    <state width="1419" height="215" key="GridCell.Tab.0.right" timestamp="1614721960834">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1899" height="226" key="GridCell.Tab.0.right" timestamp="1615879629269">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614721960834" />
     <state width="936" height="293" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="2237" height="293" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1611749499097" />
+    <state width="1899" height="226" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
     <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610543804431" />
     <state width="1419" height="231" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523989" />
     <state width="1419" height="231" key="GridCell.Tab.0.right/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723782" />
-    <state x="876" y="251" key="RollbackChangesDialog" timestamp="1611652528671">
+    <state x="876" y="251" key="RollbackChangesDialog" timestamp="1615884555535">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="876" y="251" key="RollbackChangesDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611652528671" />
+    <state x="876" y="251" key="RollbackChangesDialog/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615884555535" />
     <state x="2201" y="107" key="SettingsEditor" timestamp="1614755441341">
       <screen x="1920" y="0" width="1769" height="1080" />
     </state>
@@ -345,10 +353,14 @@
     </state>
     <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1610262993067" />
     <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610391677551" />
-    <state x="2257" y="23" width="1178" height="1045" key="find.popup" timestamp="1615261881327">
-      <screen x="1920" y="0" width="1769" height="1080" />
+    <state x="386" y="207" width="816" height="550" key="find.popup" timestamp="1615484654877">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="386" y="207" width="667" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1614710247575" />
+    <state x="386" y="207" width="816" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1615484654877" />
     <state x="2257" y="23" width="1178" height="1045" key="find.popup/0.0.1920.1080/1920.0.1769.1080@1920.0.1769.1080" timestamp="1615261881327" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1615743341108">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-231.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1615743341108" />
   </component>
 </project>

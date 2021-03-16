@@ -119,6 +119,15 @@ footer {
   background-size: 100% 100%;
 }
 
+.headerN {
+  display: block;
+  height: 271px;
+  background-image: url(../img/top41.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .grid {
   display: grid;
   display: -ms-grid; 

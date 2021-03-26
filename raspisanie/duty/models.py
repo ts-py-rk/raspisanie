@@ -86,9 +86,10 @@ class Static(models.Model):
 
 
 class Article(models.Model):
+    article_tit = models.CharField('краткий заголовок', max_length=20)
     article_title = models.CharField('название статьи', max_length=200)
     article_text = models.TextField('текст статьи')
-    pub_date = models.DateTimeField('дата публикации')
+    pub_date = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.article_title

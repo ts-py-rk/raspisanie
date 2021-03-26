@@ -12,13 +12,10 @@
 
 <div class="main">
     <div align="center" class="mounth">
-        {% if article.article_title == "В разделе 'Новости' теперь можно..." %}
-            Новые новости
-        {% elif article.article_title == "Участок печати корпуса 6 закрыт" %}
-            Участок закрыт
-
+        {% if article.article_tit %}
+            {{ article.article_tit }}
         {% else %}
-            {{ article.article_title }}
+            Новость не найдена
         {% endif %}
 
     </div>
@@ -27,22 +24,27 @@
     <hr>
 
     {% if latest_comments_list %}
-    Комментарии (новые сверху)
+
+    <div class="com_new"> Комментарии (новые сверху):</div>
+    <br>
+    <!-- <hr> -->
         {% for c in latest_comments_list %}
-            <p>
-                {% if ip in good_ips %}
-
-                        {% for ip in ips %}
-                            {% if c.comment_ip in ip %}
-                                <strong title="{{ ip.0 }}">{{c.author_name}}</strong>:
-                            {% endif %}
-                        {% endfor %}
-
-                {% else %}
-                    <strong>{{c.author_name}}:</strong>
-                {% endif %}
+            <div class="block_com">
+                <div class="text_com_2">
                 <i>{{c.comment_text}}</i>
-            </p>
+                </div>
+                <div class="com_name_2">
+                    {% if ip in good_ips %}
+                            {% for ip in ips %}
+                                {% if c.comment_ip in ip %}
+                                    <strong title="{{ ip.0 }}">{{c.author_name}}</strong>
+                                {% endif %}
+                            {% endfor %}
+                    {% else %}
+                        <strong>{{c.author_name}}</strong>
+                    {% endif %}
+                </div>
+            </div>
         {% endfor %}
     {% else %}
     Комментариев нет
@@ -53,7 +55,7 @@
         <input type="text" required placeholder="Ваше имя" name="name"><br>
         <textarea name="text" required="" placeholder="Текст коментария" cols="30" rows="10"></textarea><br>
         <button type="submit">Оставить комментарий</button>
-        <input type="hidden" name="send" value="{{ ip }}">
+        <input type="hidden" name="send" value="{{ hz }}">
     </form>
     <hr>
     <a href="{% url 'news' %}">…назад к списку новостей</a><br>

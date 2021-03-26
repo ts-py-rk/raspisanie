@@ -32,10 +32,14 @@
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0003_delete_genre.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0003_delete_genre.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0004_auto_20210123_1401.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0004_auto_20210123_1401.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0006_article_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0006_article_comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0007_comment_comment_ip.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0007_comment_comment_ip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base3.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/help.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/news.html" afterDir="false" />
@@ -58,6 +62,7 @@
       <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.eot" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.eot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.woff" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/fonts/Brush_Script.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/45LET.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/45LET.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/adm.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/adm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/admin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/admin.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/cop.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/cop.png" afterDir="false" />
@@ -81,6 +86,7 @@
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/rightcol.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/statistics.svg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/statistics.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/top.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/static/img/top41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/img/top41.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/video/help.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/video/help.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/static/Дежурства.url" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/static/Дежурства.url" afterDir="false" />
     </list>
@@ -302,39 +308,39 @@
     </state>
     <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218738912" />
     <state x="2602" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1769.1080@1920.0.1769.1080" timestamp="1614750134304" />
-    <state width="1899" height="226" key="GridCell.Tab.0.bottom" timestamp="1615879629269">
+    <state width="1899" height="103" key="GridCell.Tab.0.bottom" timestamp="1615966436675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614721960839" />
     <state width="936" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="226" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
+    <state width="1899" height="103" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
     <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610543804438" />
     <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523994" />
     <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723783" />
-    <state width="1899" height="226" key="GridCell.Tab.0.center" timestamp="1615879629269">
+    <state width="1899" height="103" key="GridCell.Tab.0.center" timestamp="1615966436675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614721960833" />
     <state width="936" height="293" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="226" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
+    <state width="1899" height="103" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
     <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610543804425" />
     <state width="1419" height="231" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523987" />
     <state width="1419" height="231" key="GridCell.Tab.0.center/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723780" />
-    <state width="1899" height="226" key="GridCell.Tab.0.left" timestamp="1615879629269">
+    <state width="1899" height="103" key="GridCell.Tab.0.left" timestamp="1615966436675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614721960830" />
     <state width="936" height="293" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="226" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
+    <state width="1899" height="103" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
     <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610543804384" />
     <state width="1419" height="231" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523979" />
     <state width="1419" height="231" key="GridCell.Tab.0.left/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723779" />
-    <state width="1899" height="226" key="GridCell.Tab.0.right" timestamp="1615879629269">
+    <state width="1899" height="103" key="GridCell.Tab.0.right" timestamp="1615966436675">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614721960834" />
     <state width="936" height="293" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="226" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615879629269" />
+    <state width="1899" height="103" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
     <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610543804431" />
     <state width="1419" height="231" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523989" />
     <state width="1419" height="231" key="GridCell.Tab.0.right/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723782" />

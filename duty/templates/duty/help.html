@@ -1,0 +1,31 @@
+{% extends 'duty/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+        <div align="center" class="mounth">Справка</div>
+        <p align="center">Как ответственный дежурный может вносить правки
+            <br><br>
+            <video width="100%" height="100%" controls loop >
+                <source src="{% static 'video/help.mp4' %}" type="video/mp4" />
+            </video>
+
+        </p>
+        <ol>
+            <li>Перейти на страницу администрирования <a href="/admin" title="Администрирование"><img src="{% static 'img/admin.svg' %}"></a></li>
+            <li>Ввести имя пользователя (<i>otv_de</i>) и пароль ( <i  title="{{ tit }}">{{ password }} )</i></li>
+            <li>Нажать "Дежурства в этом месяце"</li>
+            <li>Выбрать день</li>
+            <li>В поле "Person" выбрать фамилию из выпадающего списка</li>
+            <li>Нажать "Cохранить"</li>
+        </ol>
+
+
+
+
+
+
+{% endblock %}

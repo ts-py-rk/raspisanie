@@ -1,0 +1,26 @@
+{% extends 'duty/base2.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="left-col"  align="center"> 
+    <img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!"> 
+</div>
+
+<div class="main" align="center"> 
+    <div class="poloz">
+        <a href="{% static 'img/polozenie.jpg' %}" target="_blank" title="Открыть в новом окне">
+            <img style="width: 100%" src="{% static 'img/poloz.png' %}">
+        </a>
+    </div>
+</div>
+
+<div class="right-col" align="center">
+    <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+
+{% endblock %}

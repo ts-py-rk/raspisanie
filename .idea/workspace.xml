@@ -34,6 +34,8 @@
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0005_static.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0006_article_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0006_article_comment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0007_comment_comment_ip.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0007_comment_comment_ip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0008_article_article_tit.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0008_article_article_tit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/0009_auto_20210326_0314.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/0009_auto_20210326_0314.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/raspisanie/duty/templates/duty/base.html" afterDir="false" />
@@ -119,20 +121,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/raspisanie/duty/templates/duty" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\atihonenok\Desktop\raspisanie\duty" />
+      <recent name="$PROJECT_DIR$/raspisanie/duty" />
+      <recent name="$PROJECT_DIR$/raspisanie" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/raspisanie/duty/templates/duty" />
       <recent name="G:\raspisanie\raspisanie\duty\templates\duty" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/raspisanie/duty" />
-      <recent name="$PROJECT_DIR$/raspisanie" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.month (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="raspisanie" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,6 +157,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="month (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/duty" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/duty/month.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="month" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="raspisanie" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,7 +185,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.8" />
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty/commands" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -175,19 +199,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="month" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="raspisanie" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/raspisanie" />
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/duty/commands" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/raspisanie/settings.py" />
+      <option name="SCRIPT_NAME" value="D:\Users\atihonenok\Desktop\raspisanie\duty\month.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,19 +220,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reindex_views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="raspisanie" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty/commands" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/duty/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/duty/commands/reindex_views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="raspisanie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/duty" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/duty/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,12 +269,12 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/raspisanie/duty" />
+      <option name="SDK_HOME" value="C:\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/duty" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/raspisanie/duty/views.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/duty/views.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,17 +295,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.month (1)" />
       <item itemvalue="Python.month" />
-      <item itemvalue="Python.settings" />
-      <item itemvalue="Python.test" />
+      <item itemvalue="Python.reindex_views" />
+      <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.views" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.month" />
-        <item itemvalue="Python.settings" />
+        <item itemvalue="Python.month (1)" />
         <item itemvalue="Python.views" />
+        <item itemvalue="Python.month (1)" />
+        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.month" />
       </list>
     </recent_temporary>
   </component>
@@ -290,83 +337,45 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="311" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612112485148">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="311" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1612112485148" />
-    <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218742694" />
-    <state x="740" y="244" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1611202656967">
+    <state width="1882" height="53" key="GridCell.Tab.0.bottom" timestamp="1636978323688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="244" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611202656967" />
-    <state x="626" y="120" width="972" height="594" key="EnvironmentVariablesDialog" timestamp="1611202462706">
+    <state width="1899" height="122" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1748.1080@0.0.1920.1080" timestamp="1630582272601" />
+    <state width="1882" height="361" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1748.1080@1920.0.1748.1080" timestamp="1633090568292" />
+    <state width="1882" height="53" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636978323688" />
+    <state width="1882" height="53" key="GridCell.Tab.0.center" timestamp="1636978323688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="626" y="120" width="972" height="594" key="EnvironmentVariablesDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611202462706" />
-    <state x="2602" y="294" key="FileChooserDialogImpl" timestamp="1614750134304">
-      <screen x="1920" y="0" width="1769" height="1080" />
-    </state>
-    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611218738912" />
-    <state x="2602" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1769.1080@1920.0.1769.1080" timestamp="1614750134304" />
-    <state width="1899" height="103" key="GridCell.Tab.0.bottom" timestamp="1615966436675">
+    <state width="1899" height="122" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1748.1080@0.0.1920.1080" timestamp="1630582272601" />
+    <state width="1882" height="361" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1748.1080@1920.0.1748.1080" timestamp="1633090568292" />
+    <state width="1882" height="53" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636978323688" />
+    <state width="1882" height="53" key="GridCell.Tab.0.left" timestamp="1636978323688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614721960839" />
-    <state width="936" height="293" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="103" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
-    <state width="1419" height="319" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1610543804438" />
-    <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523994" />
-    <state width="1419" height="231" key="GridCell.Tab.0.bottom/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723783" />
-    <state width="1899" height="103" key="GridCell.Tab.0.center" timestamp="1615966436675">
+    <state width="1899" height="122" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1748.1080@0.0.1920.1080" timestamp="1630582272601" />
+    <state width="1882" height="361" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1748.1080@1920.0.1748.1080" timestamp="1633090568292" />
+    <state width="1882" height="53" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636978323688" />
+    <state width="1882" height="53" key="GridCell.Tab.0.right" timestamp="1636978323688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1419" height="215" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614721960833" />
-    <state width="936" height="293" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="103" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
-    <state width="1419" height="319" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1610543804425" />
-    <state width="1419" height="231" key="GridCell.Tab.0.center/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523987" />
-    <state width="1419" height="231" key="GridCell.Tab.0.center/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723780" />
-    <state width="1899" height="103" key="GridCell.Tab.0.left" timestamp="1615966436675">
+    <state width="1899" height="122" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1748.1080@0.0.1920.1080" timestamp="1630582272601" />
+    <state width="1882" height="361" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1748.1080@1920.0.1748.1080" timestamp="1633090568292" />
+    <state width="1882" height="53" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636978323688" />
+    <state x="1968" y="75" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1638265290849">
+      <screen x="1920" y="0" width="1750" height="1080" />
+    </state>
+    <state x="1968" y="75" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1638265290849" />
+    <state x="562" y="150" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1635930941504">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1419" height="215" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614721960830" />
-    <state width="936" height="293" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="103" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
-    <state width="1419" height="319" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1610543804384" />
-    <state width="1419" height="231" key="GridCell.Tab.0.left/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523979" />
-    <state width="1419" height="231" key="GridCell.Tab.0.left/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723779" />
-    <state width="1899" height="103" key="GridCell.Tab.0.right" timestamp="1615966436675">
+    <state x="562" y="150" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1635930941504" />
+    <state x="667" y="273" width="585" height="534" key="find.popup" timestamp="1636352515286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1419" height="215" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614721960834" />
-    <state width="936" height="293" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611741160876" />
-    <state width="1899" height="103" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615966436675" />
-    <state width="1419" height="319" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1610543804431" />
-    <state width="1419" height="231" key="GridCell.Tab.0.right/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1611692523989" />
-    <state width="1419" height="231" key="GridCell.Tab.0.right/1440.23.1920.1057/0.0.1440.900@0.0.1440.900" timestamp="1611678723782" />
-    <state x="876" y="251" key="RollbackChangesDialog" timestamp="1615884555535">
+    <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636352515286" />
+    <state x="616" y="193" width="672" height="676" key="search.everywhere.popup" timestamp="1636352507991">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="876" y="251" key="RollbackChangesDialog/0.0.1920.1080/1920.0.1765.1080@0.0.1920.1080" timestamp="1611652528671" />
-    <state x="876" y="251" key="RollbackChangesDialog/0.0.1920.1080/1920.0.1769.1080@0.0.1920.1080" timestamp="1615884555535" />
-    <state x="2201" y="107" key="SettingsEditor" timestamp="1614755441341">
-      <screen x="1920" y="0" width="1769" height="1080" />
-    </state>
-    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1614710034985" />
-    <state x="2201" y="107" key="SettingsEditor/0.0.1920.1080/1920.0.1769.1080@1920.0.1769.1080" timestamp="1614755441341" />
-    <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610391677551">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.900@0.0.1440.900" timestamp="1610262993067" />
-    <state x="375" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1440.0.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1610391677551" />
-    <state x="386" y="207" width="816" height="550" key="find.popup" timestamp="1615484654877">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="386" y="207" width="816" height="550" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1615484654877" />
-    <state x="2257" y="23" width="1178" height="1045" key="find.popup/0.0.1920.1080/1920.0.1769.1080@1920.0.1769.1080" timestamp="1615261881327" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1615743341108">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/-231.-1080.1920.1080/0.0.1440.900@0.0.1440.900" timestamp="1615743341108" />
+    <state x="616" y="193" width="672" height="676" key="search.everywhere.popup/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636352507991" />
   </component>
 </project>

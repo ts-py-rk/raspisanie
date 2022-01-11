@@ -232,6 +232,55 @@ def index(request):
     else:
         return render(request, 'duty/index.html')
 
+def edit_index(request):
+    ip = iipp(request)
+    now_month_n, now_month_ru, next_month_n,  next_month_ru = now_next_month()
+    now_duter, next_duter = now_next_duter(now_month_n, next_month_n)
+    now_day = datetime.datetime.now().day
+    stroki = []
+    wtf = Month.objects.in_bulk()
+    imena = People.objects.in_bulk()
+    surname = People.objects.all()
+    for i in surname:
+        logging.debug(f'{type(i.familia)} = {i.familia = }')
+    for w in wtf:
+        strochka = []
+        d_n = wtf[w].day_of_week
+        strochka.append(d_n)
+        ch = wtf[w].id
+        strochka.append(ch)
+        id_d = wtf[w].person_id
+        for im in imena:
+            if imena[im].id == id_d:
+                strochka.append(imena[im].familia)
+        stroki.append(strochka)
+    for s in stroki:
+        logging.debug(f'{type(s[2]) = } - {s[2] = }')
+    logging.debug(f'{surname = }')
+    qr = reff(ip, qr_list)
+    content = {
+        'title': 'Расписание дежурств',
+        'txt': 'Дежурства',
+        'now': now_day,
+        'now_month': now_month_n,
+        'next': next_month_ru,
+        'wtf': stroki,
+        'ip': ip,
+        'good_ips': good_ips,
+        'now_duter': now_duter,
+        'next_duter': next_duter,
+        'qr': qr,
+        'surname': surname,
+    }
+    # logging.info(f'{ip = }')
+    client_ip(request, content['title'])
+    if ip not in bad_ip:
+        return render(request, 'duty/edit_index.html', content)
+    else:
+        return render(request, 'duty/edit_index.html')
+
+
+
 def stat(request):
     now_month_n, now_month_ru, next_month_n, next_month_ru = now_next_month()
     now_duter, next_duter = now_next_duter(now_month_n, next_month_n)

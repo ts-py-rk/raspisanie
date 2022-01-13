@@ -1,5 +1,5 @@
 from django.http import Http404, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse
 import datetime
 import pytils
@@ -13,6 +13,8 @@ import sqlite3
 import hashlib
 from .commands import month2
 import logging
+import requests
+from .forms import MonthForm
 logging.basicConfig(filename='./log.log', level=logging.DEBUG, format='%(levelname)s - %(message)s')
 # logging.basicConfig(filename='./log.log', level=logging.DEBUG, format='%(levelname)s - %(message)s', filemode='a')
 
@@ -233,33 +235,73 @@ def index(request):
         return render(request, 'duty/index.html')
 
 def edit_index(request):
+
+    error = ''
+    if request.method == 'POST':
+        logging.info(f'{request.method = }')
+        form = MonthForm(request.POST)
+        logging.info(f'{form = }')
+        logging.info(f'{type(form) = }')
+        logging.info(f'{form.fields = }')
+        logging.info(f'{type(form.fields) = }')
+        hz = form.fields["familia"]
+        logging.info(f'{ hz = }')
+        # logging.info(f'{ hz.widgets = }')
+
+        if form.is_valid():
+            form.save()
+            # return redirect('index')
+        else:
+            error = ' АШИПКА'
+    form = MonthForm()
+
     ip = iipp(request)
     now_month_n, now_month_ru, next_month_n,  next_month_ru = now_next_month()
     now_duter, next_duter = now_next_duter(now_month_n, next_month_n)
     now_day = datetime.datetime.now().day
     stroki = []
+    # logging.debug(f'{stroki = }')
     wtf = Month.objects.in_bulk()
+    # logging.debug(f'{wtf = }')
+    # logging.debug(f'{type(wtf) = }')
     imena = People.objects.in_bulk()
+    # logging.debug(f'{imena = }')
     surname = People.objects.all()
-    for i in surname:
-        logging.debug(f'{type(i.familia)} = {i.familia = }')
+    # for i in surname:
+    #     logging.debug(f'{type(i.familia)} = {i.familia = }')
     for w in wtf:
+        # logging.debug(f'{w = }')
+        # logging.debug(f'{wtf[w] = }')
+        # logging.debug(f'{type(wtf[w]) = }')
+        # logging.debug(f'{wtf[w].pk = }')
+        # logging.debug(f'{type(wtf[w].pk) = }')
+        # logging.debug(f'{wtf[w].pk = }')
+        # logging.debug(f'{type(wtf[w].pk) = }')
+
         strochka = []
+        # logging.debug(f'{strochka = }')
         d_n = wtf[w].day_of_week
+        # logging.debug(f'{d_n = } = wtw[{w}].day_of_week')
         strochka.append(d_n)
         ch = wtf[w].id
+        # logging.debug(f'{ch = } = wtf[{w}].id')
         strochka.append(ch)
         id_d = wtf[w].person_id
+        # logging.debug(f'{id_d = } = wtf[{w}].person_id')
         for im in imena:
+            # logging.debug(f'{im = }')
             if imena[im].id == id_d:
+                # logging.debug(f'if imena[{im}].id == {id_d = }')
                 strochka.append(imena[im].familia)
+                # logging.debug(f'imena[{im}].familia = {imena[im].familia}')
+                # strochka.append(w.id)
         stroki.append(strochka)
-    for s in stroki:
-        logging.debug(f'{type(s[2]) = } - {s[2] = }')
-    logging.debug(f'{surname = }')
+    # for s in stroki:
+    #     logging.debug(f'{type(s[2]) = } - {s[2] = }')
+    # logging.debug(f'{surname = }')
     qr = reff(ip, qr_list)
     content = {
-        'title': 'Расписание дежурств',
+        'title': 'Расписание дежурств EDIT',
         'txt': 'Дежурства',
         'now': now_day,
         'now_month': now_month_n,
@@ -278,6 +320,123 @@ def edit_index(request):
         return render(request, 'duty/edit_index.html', content)
     else:
         return render(request, 'duty/edit_index.html')
+
+def edit(request):
+
+    error = ''
+    if request.method == 'POST':
+        logging.info(f'{request.method = }')
+        form = MonthForm(request.POST)
+        logging.info(f'{form = }')
+        logging.info(f'{type(form) = }')
+        logging.info(f'{form.fields = }')
+        logging.info(f'{type(form.fields) = }')
+        # hz = form.fields["familia"]
+        # logging.info(f'{ hz = }')
+        # logging.info(f'{ hz.widgets = }')
+        hz = request.POST
+        logging.info(f'{hz = }')
+        logging.info(f'{type(hz) = }')
+        if form.is_valid():
+            logging.info(f'form.is_valid()')
+            # form.save()
+            # logging.info(f'form.save()')
+            logging.debug(f'{hz["person"] = }')
+            logging.debug(f'{Month.objects.in_bulk() = }')
+            for b in Month.objects.in_bulk():
+                logging.debug(f'{b = }')
+                if b == 10:
+                    bulka_10 = Month.objects.in_bulk([10])
+                    logging.debug(f'{ bulka_10[10] = }')
+                    logging.debug(f'{bulka_10[10].person_id = }')
+            bulka_10[10].person_id = hz["person"]
+            monday = Month.objects.get(pk=10)
+            monday.person_id = hz['person']
+            logging.info(f'{monday = }')
+            monday.save()
+            # Month.save()
+            logging.debug(f'{bulka_10[10].person_id = }')
+            logging.debug(f'{Month.objects.all() = }')
+            for a in Month.objects.all():
+                logging.debug(f'{a = }')
+            logging.debug(f'{Month.objects.filter() = }')
+            for f in Month.objects.filter():
+                logging.debug(f'{f = }')
+            return redirect('edit')
+        else:
+            error = ' АШИПКА'
+            logging.error(f'АШЫПКА')
+    else:
+        form = MonthForm()
+
+    # logging.debug(f'{Month.objects.in_bulk([1]) = }')
+
+    ip = iipp(request)
+    now_month_n, now_month_ru, next_month_n,  next_month_ru = now_next_month()
+    now_duter, next_duter = now_next_duter(now_month_n, next_month_n)
+    now_day = datetime.datetime.now().day
+    stroki = []
+    # logging.debug(f'{stroki = }')
+    wtf = Month.objects.in_bulk()
+    # logging.debug(f'{wtf = }')
+    # logging.debug(f'{type(wtf) = }')
+    imena = People.objects.in_bulk()
+    # logging.debug(f'{imena = }')
+    surname = People.objects.all()
+    # for i in surname:
+    #     logging.debug(f'{type(i.familia)} = {i.familia = }')
+    for w in wtf:
+        # logging.debug(f'{w = }')
+        # logging.debug(f'{wtf[w] = }')
+        # logging.debug(f'{type(wtf[w]) = }')
+        # logging.debug(f'{wtf[w].pk = }')
+        # logging.debug(f'{type(wtf[w].pk) = }')
+        # logging.debug(f'{wtf[w].pk = }')
+        # logging.debug(f'{type(wtf[w].pk) = }')
+
+        strochka = []
+        # logging.debug(f'{strochka = }')
+        d_n = wtf[w].day_of_week
+        # logging.debug(f'{d_n = } = wtw[{w}].day_of_week')
+        strochka.append(d_n)
+        ch = wtf[w].id
+        # logging.debug(f'{ch = } = wtf[{w}].id')
+        strochka.append(ch)
+        id_d = wtf[w].person_id
+        # logging.debug(f'{id_d = } = wtf[{w}].person_id')
+        for im in imena:
+            # logging.debug(f'{im = }')
+            if imena[im].id == id_d:
+                # logging.debug(f'if imena[{im}].id == {id_d = }')
+                strochka.append(imena[im].familia)
+                # logging.debug(f'imena[{im}].familia = {imena[im].familia}')
+                # strochka.append(w.id)
+        stroki.append(strochka)
+    # for s in stroki:
+    #     logging.debug(f'{type(s[2]) = } - {s[2] = }')
+    # logging.debug(f'{surname = }')
+    qr = reff(ip, qr_list)
+    content = {
+        'title': 'EDIT',
+        'txt': 'Дежурства',
+        'now': now_day,
+        'now_month': now_month_n,
+        'next': next_month_ru,
+        'wtf': stroki,
+        'ip': ip,
+        'good_ips': good_ips,
+        'now_duter': now_duter,
+        'next_duter': next_duter,
+        'qr': qr,
+        'surname': surname,
+        'form': form,
+    }
+    # logging.info(f'{ip = }')
+    client_ip(request, content['title'])
+    if ip not in bad_ip:
+        return render(request, 'duty/edit.html', content)
+    else:
+        return render(request, 'duty/edit.html')
 
 
 

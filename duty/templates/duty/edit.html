@@ -1,13 +1,10 @@
-{% extends 'duty/base.html' %}
 {% load static %}
 
-{% block title %}
-    {{ title }}
-{% endblock %}
 
-{% block content %}
 <form method="post">
 {% csrf_token %}
+        <input type="submit">
+
     <table  class="table" align="center">
         <caption class="mounth">{% now "F" %}</caption>
         <tr>
@@ -26,9 +23,9 @@
                         {% if t.2 == '! свободно !' %}
                             <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
                             {% else %}
-                            <select name="{{ t }}">
+                            <select name="{{ t.1 }}">
                                 {%  for s in surname %}
-                                    <option name="{{ s.pk }}" value="{{ s.familia }}"
+                                    <option name="{{ t.1 }}" value="{{ s.pk }}"
                                         {% if s.familia == t.2 %}
                                             selected
                                         {% endif %}
@@ -47,7 +44,12 @@
                 {% endif %}
             {% endfor %}
     </table>
-    <input type="submit">
 </form>
-<a class="o_d_n" href="{% url 'edit' %}">edit</a>
-{% endblock %}
+<hr>
+{{ form }}
+<hr>
+<form method="post">
+    {% csrf_token %}
+    <input type="submit">
+    {{ form.person }}
+</form>

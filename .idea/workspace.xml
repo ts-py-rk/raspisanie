@@ -121,16 +121,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/duty/templates/duty" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\atihonenok\Desktop\raspisanie\raspisanie" />
       <recent name="D:\Users\atihonenok\Desktop\raspisanie\duty" />
       <recent name="$PROJECT_DIR$/raspisanie/duty" />
       <recent name="$PROJECT_DIR$/raspisanie" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\atihonenok\Desktop\raspisanie\duty\templates\duty" />
       <recent name="$PROJECT_DIR$/raspisanie/duty/templates/duty" />
       <recent name="G:\raspisanie\raspisanie\duty\templates\duty" />
     </key>
@@ -337,6 +339,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1641897682784">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1641897682784" />
     <state width="1882" height="53" key="GridCell.Tab.0.bottom" timestamp="1636978323688">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -365,9 +371,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="273" width="585" height="534" key="find.popup/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636352515286" />
-    <state x="616" y="193" width="672" height="676" key="search.everywhere.popup" timestamp="1636352507991">
+    <state x="616" y="193" width="672" height="676" key="search.everywhere.popup" timestamp="1641983909920">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="193" width="672" height="676" key="search.everywhere.popup/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1636352507991" />
+    <state x="616" y="193" width="672" height="676" key="search.everywhere.popup/0.0.1920.1080/1920.0.1750.1080@0.0.1920.1080" timestamp="1641983909920" />
   </component>
 </project>

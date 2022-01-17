@@ -282,8 +282,18 @@
 #     for i in description.split('\n'):
 #         text += ('<p>' + i + '</p>')
 #         return mark_safe(text)
-print('12')
-first_day = '2021-10-01'
-first_month = int(first_day.split('-')[1])
-print(f'{first_day = }')
-print(f'{first_month = }')
+# print('12')
+# first_day = '2021-10-01'
+# first_month = int(first_day.split('-')[1])
+# print(f'{first_day = }')
+# print(f'{first_month = }')
+date_from_form = {''
+                  'person': ['29', '34', '22', '19', '28', '4', '19', '38',
+                             '13', '24', '11', '1', '12', '32', '20', '29'],
+                  'id': ['10', '11', '12', '13', '14', '17', '18', '19',
+                         '20', '21', '24', '25', '26', '27', '28', '31'],
+                  }
+persons = date_from_form["person"]
+print(f'{ persons =}')
+print(f'{date_from_form["id"] =}')
+print(f'{*persons, }')

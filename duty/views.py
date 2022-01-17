@@ -321,55 +321,39 @@ def edit_index(request):
     else:
         return render(request, 'duty/edit_index.html')
 
-def edit(request):
-
+def edit(request, month_id=None):
     error = ''
     if request.method == 'POST':
+        logging.info(f'{month_id = }')
         logging.info(f'{request.method = }')
         form = MonthForm(request.POST)
         logging.info(f'{form = }')
-        logging.info(f'{type(form) = }')
+        # logging.info(f'{type(form) = }')
         logging.info(f'{form.fields = }')
-        logging.info(f'{type(form.fields) = }')
-        # hz = form.fields["familia"]
-        # logging.info(f'{ hz = }')
-        # logging.info(f'{ hz.widgets = }')
-        hz = request.POST
-        logging.info(f'{hz = }')
-        logging.info(f'{type(hz) = }')
+        # logging.info(f'{type(form.fields) = }')
+        date_from_form = request.POST
+        logging.info(f'{date_from_form = }')
+        edit_day_id = date_from_form["id"]
+        new_duter = int(date_from_form["new_person"])
+        logging.info(f'{new_duter = }')
+        logging.debug(f'{ edit_day_id = }')
         if form.is_valid():
             logging.info(f'form.is_valid()')
-            # form.save()
-            # logging.info(f'form.save()')
-            logging.debug(f'{hz["person"] = }')
-            logging.debug(f'{Month.objects.in_bulk() = }')
-            for b in Month.objects.in_bulk():
-                logging.debug(f'{b = }')
-                if b == 10:
-                    bulka_10 = Month.objects.in_bulk([10])
-                    logging.debug(f'{ bulka_10[10] = }')
-                    logging.debug(f'{bulka_10[10].person_id = }')
-            bulka_10[10].person_id = hz["person"]
-            monday = Month.objects.get(pk=10)
-            monday.person_id = hz['person']
-            logging.info(f'{monday = }')
-            monday.save()
-            # Month.save()
-            logging.debug(f'{bulka_10[10].person_id = }')
-            logging.debug(f'{Month.objects.all() = }')
-            for a in Month.objects.all():
-                logging.debug(f'{a = }')
-            logging.debug(f'{Month.objects.filter() = }')
-            for f in Month.objects.filter():
-                logging.debug(f'{f = }')
+            logging.debug(f'{ edit_day_id = }')
+            edit_day = Month.objects.get(pk=edit_day_id)
+            logging.info(f'{edit_day = }')
+            logging.warning(f'{edit_day.person_id = }')
+            edit_day.person_id = new_duter
+            logging.warning(f'{edit_day.person_id = }')
+            edit_day.save()
+            logging.warning(f'{edit_day.person_id = }')
             return redirect('edit')
         else:
+            logging.error(f'{form.errors.as_data() = }')
             error = ' АШИПКА'
             logging.error(f'АШЫПКА')
     else:
         form = MonthForm()
-
-    # logging.debug(f'{Month.objects.in_bulk([1]) = }')
 
     ip = iipp(request)
     now_month_n, now_month_ru, next_month_n,  next_month_ru = now_next_month()
@@ -393,7 +377,6 @@ def edit(request):
         # logging.debug(f'{type(wtf[w].pk) = }')
         # logging.debug(f'{wtf[w].pk = }')
         # logging.debug(f'{type(wtf[w].pk) = }')
-
         strochka = []
         # logging.debug(f'{strochka = }')
         d_n = wtf[w].day_of_week
@@ -430,6 +413,7 @@ def edit(request):
         'qr': qr,
         'surname': surname,
         'form': form,
+        'month_id': month_id,
     }
     # logging.info(f'{ip = }')
     client_ip(request, content['title'])

@@ -38,5 +38,11 @@
                 {% endif %}
             {% endfor %}
     </table>
-<a class="o_d_n" href="{% url 'edit_index' %}">edit</a>
+
+		{% if ip in good_ips %}
+			<a class="o_d_n" href="{% url 'edit_index' %}">edit</a>
+		{% else %}
+			<a class="o_d_n" href="{% url 'index' %}">edit</a>
+		{% endif %}
+
 {% endblock %}

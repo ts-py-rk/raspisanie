@@ -1,9 +1,14 @@
+{% extends 'duty/base.html' %}
 {% load static %}
 
+{% block title %}
+    {{ title }}
+{% endblock %}
 
-<form method="post">
+{% block content %}
+<form method="post" name="form">
 {% csrf_token %}
-        <input type="submit">
+
 
     <table  class="table" align="center">
         <caption class="mounth">{% now "F" %}</caption>
@@ -22,34 +27,35 @@
                         <td class="name">
                         {% if t.2 == '! свободно !' %}
                             <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
-                            {% else %}
-                            <select name="{{ t.1 }}">
-                                {%  for s in surname %}
-                                    <option name="{{ t.1 }}" value="{{ s.pk }}"
-                                        {% if s.familia == t.2 %}
-                                            selected
-                                        {% endif %}
-                                    >{{ s.familia }}</option>
-                                {% endfor %}
-                            </select>
+                        {% else %}
+                                {% if month_id == t.1  %}
+                                    <select name="new_person" size="{{ surname|length }}" onchange="form.submit('')">
+                                    {%  for s in surname %}
+                                        <option value="{{ s.pk }}"
+                                            {% if s.familia == t.2 %}
+                                                selected name="option_name">
+                                            {% else %}
+                                                name="person_{{ s.pk }}">
+                                            {% endif %}
+                                        {{ s.familia }}
+                                        </option>
+                                    {% endfor %}
+                                    </select>
+                                    <input type="hidden" name="id" value="{{ t.1 }}">
+                                {% else %}
+                                    <a class="duter" href="{% url 'edit' t.1 %}" title="Изменить дежурного">{{ t.2 }}</a>
+                                {% endif %}
                         {% endif %}
                         </td></tr>
-                        {% if t.0 == "пт" %}
-                            <tr><td colspan="3"><hr></td></tr>
-                        {% endif %}
-                        {% if t.0 == "сб" %}
-                            <tr><td colspan="3"><hr></td></tr>
-                        {% endif %}
-
+                    {% if t.0 == "пт" %}
+                        <tr><td colspan="3"><hr></td></tr>
+                    {% endif %}
+                    {% if t.0 == "сб" %}
+                        <tr><td colspan="3"><hr></td></tr>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
     </table>
 </form>
-<hr>
-{{ form }}
-<hr>
-<form method="post">
-    {% csrf_token %}
-    <input type="submit">
-    {{ form.person }}
-</form>
+
+{% endblock %}

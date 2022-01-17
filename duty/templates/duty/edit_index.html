@@ -6,8 +6,7 @@
 {% endblock %}
 
 {% block content %}
-<form method="post">
-{% csrf_token %}
+
     <table  class="table" align="center">
         <caption class="mounth">{% now "F" %}</caption>
         <tr>
@@ -26,6 +25,8 @@
                         {% if t.2 == '! свободно !' %}
                             <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
                             {% else %}
+                            <form method="post">
+                            {% csrf_token %}
                             <select name="{{ t }}">
                                 {%  for s in surname %}
                                     <option name="{{ s.pk }}" value="{{ s.familia }}"
@@ -35,6 +36,8 @@
                                     >{{ s.familia }}</option>
                                 {% endfor %}
                             </select>
+                            <input type="submit">
+                        </form>
                         {% endif %}
                         </td></tr>
                         {% if t.0 == "пт" %}
@@ -47,7 +50,5 @@
                 {% endif %}
             {% endfor %}
     </table>
-    <input type="submit">
-</form>
 <a class="o_d_n" href="{% url 'edit' %}">edit</a>
 {% endblock %}

@@ -23,7 +23,7 @@
                     {% endif %}
                         <td class="day_of_week">{{ t.0 }}</td>
                         <td class="day">{{ t.1 }}</td>
-                        <td class="name">
+                        <td class="name" valign="middle">
                         {% if t.2 == '! свободно !' %}
                             <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
                         {% else %}
@@ -41,6 +41,9 @@
                                         </option>
                                     {% endfor %}
                                     </select>
+                                    <a class="duter" href="{% url 'edit' %}" title="ОТМЕНА">
+				                        <img src="{% static 'img/x.png' %}" class="cancel">
+			                        </a>
                                     <input type="hidden" name="id" value="{{ t.1 }}">
                                 {% else %}
                                     <a class="duter" href="{% url 'edit' t.1 %}" title="Изменить дежурного">{{ t.2 }}</a>

@@ -247,6 +247,7 @@ footer {
 
 .name {
   text-align: left;
+  vertical-align: middle;
 }
 
 .name1 {
@@ -546,4 +547,11 @@ ol {
 }
 a.duter {
     text-decoration: none;
+}
+
+img.cancel {
+    margin-bottom: 110px;
+    margin-top: 110px;
+    padding-bottom: 150px;
+    padding-top: 150px;
 }

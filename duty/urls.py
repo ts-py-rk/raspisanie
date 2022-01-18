@@ -11,7 +11,6 @@ urlpatterns = [
     path('help', views.help, name='help'),
     path('<int:article_id>/', views.detail, name='detail'),
     path('<int:article_id>/leave_comment/', views.leave_comment, name='leave_comment'),
-    path('edit_index', views.edit_index, name='edit_index'),
     path('edit', views.edit, name='edit'),
     path('edit_<int:month_id>', views.edit, name='edit'),
 ]

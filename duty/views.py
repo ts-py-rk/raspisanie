@@ -42,14 +42,34 @@ bad_ip = [
     # '172.41.0.174',  # Я
     '',
 ]
-ip_otv_de = [
-    '172.41.0.192',     # Шемякин
+superduty_ip = [
+    '172.41.0.174',     # я
+    'свободное место'
 ]
 peoples = otdel.peoples
 mon_fro_bas = month2.month_from_base()
 now_mon = month2.now_month()
 month2.check(mon_fro_bas, now_mon)
 
+def superduty():
+    logging.info(f'START superduty()')
+    all_super = SuperDuty.objects.all()
+    # logging.debug(f'   {all_super = }')
+    # for sd in all_super:
+        # logging.debug(f'      {sd = }')
+    today = datetime.datetime.now().date().strftime('%y-%m')
+    logging.debug(f'{today = }')
+    for i in SuperDuty.objects.all():
+        m = i.mesyas.strftime('%y-%m')
+        if m == today:
+            # logging.debug(f'   {i = }')
+            id = i.person_id
+            # logging.debug(f'   {id = }')
+    s_d_now = People.objects.get(pk=id)
+    logging.info(f'   {s_d_now = }')
+    logging.info(f'   {s_d_now.ip = }')
+    logging.info(f'STOP superduty')
+    return s_d_now.ip
 
 def reff(ip, qr_list):
     if ip in qr_list:
@@ -226,6 +246,7 @@ def index(request):
         'now_duter': now_duter,
         'next_duter': next_duter,
         'qr': qr,
+        'superduty_ip': superduty_ip
     }
     # logging.info(f'{ip = }')
     client_ip(request, content['title'])
@@ -233,93 +254,6 @@ def index(request):
         return render(request, 'duty/index.html', content)
     else:
         return render(request, 'duty/index.html')
-
-def edit_index(request):
-
-    error = ''
-    if request.method == 'POST':
-        logging.info(f'{request.method = }')
-        form = MonthForm(request.POST)
-        logging.info(f'{form = }')
-        logging.info(f'{type(form) = }')
-        logging.info(f'{form.fields = }')
-        logging.info(f'{type(form.fields) = }')
-        hz = form.fields["familia"]
-        logging.info(f'{ hz = }')
-        # logging.info(f'{ hz.widgets = }')
-
-        if form.is_valid():
-            form.save()
-            # return redirect('index')
-        else:
-            error = ' АШИПКА'
-    form = MonthForm()
-
-    ip = iipp(request)
-    now_month_n, now_month_ru, next_month_n,  next_month_ru = now_next_month()
-    now_duter, next_duter = now_next_duter(now_month_n, next_month_n)
-    now_day = datetime.datetime.now().day
-    stroki = []
-    # logging.debug(f'{stroki = }')
-    wtf = Month.objects.in_bulk()
-    # logging.debug(f'{wtf = }')
-    # logging.debug(f'{type(wtf) = }')
-    imena = People.objects.in_bulk()
-    # logging.debug(f'{imena = }')
-    surname = People.objects.all()
-    # for i in surname:
-    #     logging.debug(f'{type(i.familia)} = {i.familia = }')
-    for w in wtf:
-        # logging.debug(f'{w = }')
-        # logging.debug(f'{wtf[w] = }')
-        # logging.debug(f'{type(wtf[w]) = }')
-        # logging.debug(f'{wtf[w].pk = }')
-        # logging.debug(f'{type(wtf[w].pk) = }')
-        # logging.debug(f'{wtf[w].pk = }')
-        # logging.debug(f'{type(wtf[w].pk) = }')
-
-        strochka = []
-        # logging.debug(f'{strochka = }')
-        d_n = wtf[w].day_of_week
-        # logging.debug(f'{d_n = } = wtw[{w}].day_of_week')
-        strochka.append(d_n)
-        ch = wtf[w].id
-        # logging.debug(f'{ch = } = wtf[{w}].id')
-        strochka.append(ch)
-        id_d = wtf[w].person_id
-        # logging.debug(f'{id_d = } = wtf[{w}].person_id')
-        for im in imena:
-            # logging.debug(f'{im = }')
-            if imena[im].id == id_d:
-                # logging.debug(f'if imena[{im}].id == {id_d = }')
-                strochka.append(imena[im].familia)
-                # logging.debug(f'imena[{im}].familia = {imena[im].familia}')
-                # strochka.append(w.id)
-        stroki.append(strochka)
-    # for s in stroki:
-    #     logging.debug(f'{type(s[2]) = } - {s[2] = }')
-    # logging.debug(f'{surname = }')
-    qr = reff(ip, qr_list)
-    content = {
-        'title': 'Расписание дежурств EDIT',
-        'txt': 'Дежурства',
-        'now': now_day,
-        'now_month': now_month_n,
-        'next': next_month_ru,
-        'wtf': stroki,
-        'ip': ip,
-        'good_ips': good_ips,
-        'now_duter': now_duter,
-        'next_duter': next_duter,
-        'qr': qr,
-        'surname': surname,
-    }
-    # logging.info(f'{ip = }')
-    client_ip(request, content['title'])
-    if ip not in bad_ip:
-        return render(request, 'duty/edit_index.html', content)
-    else:
-        return render(request, 'duty/edit_index.html')
 
 def edit(request, month_id=None):
     error = ''
@@ -360,47 +294,27 @@ def edit(request, month_id=None):
     now_duter, next_duter = now_next_duter(now_month_n, next_month_n)
     now_day = datetime.datetime.now().day
     stroki = []
-    # logging.debug(f'{stroki = }')
     wtf = Month.objects.in_bulk()
-    # logging.debug(f'{wtf = }')
-    # logging.debug(f'{type(wtf) = }')
     imena = People.objects.in_bulk()
-    # logging.debug(f'{imena = }')
     surname = People.objects.all()
-    # for i in surname:
-    #     logging.debug(f'{type(i.familia)} = {i.familia = }')
     for w in wtf:
-        # logging.debug(f'{w = }')
-        # logging.debug(f'{wtf[w] = }')
-        # logging.debug(f'{type(wtf[w]) = }')
-        # logging.debug(f'{wtf[w].pk = }')
-        # logging.debug(f'{type(wtf[w].pk) = }')
-        # logging.debug(f'{wtf[w].pk = }')
-        # logging.debug(f'{type(wtf[w].pk) = }')
         strochka = []
-        # logging.debug(f'{strochka = }')
         d_n = wtf[w].day_of_week
-        # logging.debug(f'{d_n = } = wtw[{w}].day_of_week')
         strochka.append(d_n)
         ch = wtf[w].id
-        # logging.debug(f'{ch = } = wtf[{w}].id')
         strochka.append(ch)
         id_d = wtf[w].person_id
-        # logging.debug(f'{id_d = } = wtf[{w}].person_id')
         for im in imena:
-            # logging.debug(f'{im = }')
             if imena[im].id == id_d:
-                # logging.debug(f'if imena[{im}].id == {id_d = }')
                 strochka.append(imena[im].familia)
-                # logging.debug(f'imena[{im}].familia = {imena[im].familia}')
-                # strochka.append(w.id)
         stroki.append(strochka)
-    # for s in stroki:
-    #     logging.debug(f'{type(s[2]) = } - {s[2] = }')
-    # logging.debug(f'{surname = }')
     qr = reff(ip, qr_list)
+    if ip in good_ips:
+        title = f'Изменение дежурного {month_id} числа'
+    else:
+        title = f'Error 404 ({month_id})'
     content = {
-        'title': 'EDIT',
+        'title': title,
         'txt': 'Дежурства',
         'now': now_day,
         'now_month': now_month_n,
@@ -414,6 +328,7 @@ def edit(request, month_id=None):
         'surname': surname,
         'form': form,
         'month_id': month_id,
+        'superduty_ip': superduty_ip
     }
     # logging.info(f'{ip = }')
     client_ip(request, content['title'])
@@ -421,8 +336,6 @@ def edit(request, month_id=None):
         return render(request, 'duty/edit.html', content)
     else:
         return render(request, 'duty/edit.html')
-
-
 
 def stat(request):
     now_month_n, now_month_ru, next_month_n, next_month_ru = now_next_month()
@@ -527,7 +440,7 @@ def help(request):
         'now_duter': now_duter,
         'next_duter': next_duter,
     }
-    if ip in ip_otv_de or ip in good_ips:
+    if ip in superduty_ip or ip in good_ips:
         content['password'] = 'raspisanie'
         content['tit'] = ''
     else:
@@ -573,4 +486,7 @@ def leave_comment(request, article_id):
     return HttpResponseRedirect(reverse('detail', args=(ar.id,)))
 
 
-# imena = People.objects.in_bulk()
+superduty_now = superduty()
+logging.info(f'{superduty_ip = }')
+superduty_ip[1] = superduty()
+logging.info(f'{superduty_ip = }')

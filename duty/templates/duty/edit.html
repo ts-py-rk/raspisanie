@@ -6,10 +6,9 @@
 {% endblock %}
 
 {% block content %}
+{% if ip in good_ips or superduty_ip %}
 <form method="post" name="form">
 {% csrf_token %}
-
-
     <table  class="table" align="center">
         <caption class="mounth">{% now "F" %}</caption>
         <tr>
@@ -28,6 +27,7 @@
                         {% if t.2 == '! свободно !' %}
                             <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
                         {% else %}
+                            {% if ip in good_ips or superduty_ip %}
                                 {% if month_id == t.1  %}
                                     <select name="new_person" size="{{ surname|length }}" onchange="form.submit('')">
                                     {%  for s in surname %}
@@ -45,6 +45,9 @@
                                 {% else %}
                                     <a class="duter" href="{% url 'edit' t.1 %}" title="Изменить дежурного">{{ t.2 }}</a>
                                 {% endif %}
+                            {% else %}
+                                 {{ t.2 }}
+                            {% endif %}
                         {% endif %}
                         </td></tr>
                     {% if t.0 == "пт" %}
@@ -57,5 +60,7 @@
             {% endfor %}
     </table>
 </form>
-
+{% else %}
+    НЕТ ДОСТУПА
+{% endif %}
 {% endblock %}

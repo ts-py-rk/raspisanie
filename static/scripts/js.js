@@ -1,4 +1,4 @@
-  function ref2(){
+  function ref(){
      
       var z = document.getElementById('qr').style.opacity
       // alert(z)

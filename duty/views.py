@@ -356,7 +356,7 @@ def stat(request):
 
 def news(request):
     ip = iipp(request)
-    list = Article.objects.order_by('-pub_date')[:10]
+    list = Article.objects.order_by('-pub_date')[:20]
     qr = reff(ip, qr_list)
     content = {
         'title': 'Новости',

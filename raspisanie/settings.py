@@ -28,7 +28,15 @@ DEBUG = False           # python manage.py runserver 0.0.0.0:8001 --insecure
 # DEBUG = True          # python manage.py runserver 0.0.0.0:8001
 
 # ALLOWED_HOSTS = ['10.0.0.5']
-ALLOWED_HOSTS = ['172.41.0.174', '0.0.0.0', 'localhost', '127.0.0.1', '041-C4515', '192.168.88.253', '10.0.0.5']
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    '10.0.0.5',
+    '127.0.0.1',
+    'localhost',
+    '041-C4515',
+    '172.41.0.174',
+    '192.168.88.253',
+]
 
 
 # Application definition

@@ -25,20 +25,17 @@
                         <td class="day_of_week">{{ t.0 }}</td>
                         <td class="day">{{ t.1 }}</td>
                         <td class="name">
-                        {% if t.2 == '! свободно !' %}
-                            <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
+                        {% if ip in good_ips or ip in superduty_ip %}
+                            <a class="duter" href="{% url 'edit' t.1 %}" title="Изменить дежурного">{{ t.2 }}</a>
                         {% else %}
-                            {% if ip in good_ips or superduty_ip %}
-                                <a class="duter" href="{% url 'edit' t.1 %}" title="Изменить дежурного">{{ t.2 }}</a>
+                            {% if t.2 == '! свободно !' %}
+                                <b title="Это дежурство пока свободно! Нажми для записи"><a href="mailto:ialekseeva@grc.ru?subject=Хочу дежурить {{ t.1 }} числа">{{ t.2 }}</a> </b>
                             {% else %}
-                                 {{ t.2 }}
+                                {{ t.2 }}
                             {% endif %}
                         {% endif %}
                         </td></tr>
-                    {% if t.0 == "пт" %}
-                        <tr><td colspan="3"><hr></td></tr>
-                    {% endif %}
-                    {% if t.0 == "сб" %}
+                    {% if t.0 == "пт" and t.1 != 4 or t.0 == "сб" %}
                         <tr><td colspan="3"><hr></td></tr>
                     {% endif %}
                 {% endif %}

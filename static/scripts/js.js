@@ -1,4 +1,4 @@
-  function ref(){
+  function ref2(){
      
       var z = document.getElementById('qr').style.opacity
       // alert(z)
@@ -8,6 +8,5 @@
       }
       else {
         document.getElementById('qr').style.opacity = "1"
-
       }
     }

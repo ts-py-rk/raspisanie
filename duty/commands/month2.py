@@ -5,34 +5,28 @@ import datetime
 import logging
 
 def month_from_base():
-    # print(f'START month_from_base()')
-    # logging.info(f'START month_from_base()')
+    # logging.debug(f'START month_from_base()')
     conn = sqlite3.connect(r'db.sqlite3')
     cur = conn.cursor()
-    # print('читаем базу данных')
     cur.execute("SELECT * FROM duty_month;")
     all_results = cur.fetchall()
     first_day = all_results[0][1]
     first_month = int(first_day.split('-')[1])
-    # print(f'{first_month = }')
+    # logging.debug(f'{first_month = }')
     conn.close()
-    # print(f'STOP month_from_base()')
-    # logging.info(f'STOP month_from_base()')
+    # logging.debug(f'STOP month_from_base()')
     return first_month
 
 def now_month():
-    # print(f'START now_month()')
-    # logging.info(f'START now_month()')
-    c = calendar.Calendar()
+    # logging.debug(f'START now_month()')
+    c = calendar.Calendar()                 # не помню зачем это тут
     today = datetime.datetime.now()
     mes = today.month
-    # print(f'{mes = }')
-    # print(f'STOP now_month()')
-    # logging.info(f'STOP now_month()')
+    # logging.debug(f'{mes = }')
+    # logging.debug(f'STOP now_month()')
     return mes
 
 def check(read_m, now_m):
-    # print(f'START check({read_m}, {now_m})')
     # logging.info(f'START check({read_m}, {now_m})')
     if read_m != now_m:
         message = '    НАДО ОБНОВИТЬ РАСПИСАНИЕ!!!'
@@ -40,27 +34,25 @@ def check(read_m, now_m):
         logging.error(f'{message}')
         conn = sqlite3.connect(r'db.sqlite3')
         cur = conn.cursor()
-        # print('читаем базу данных')
         cur.execute("SELECT * FROM duty_month;")
         all_results = cur.fetchall()
         # for a_r in all_results:
-        #     print(a_r)
-        # print(f'{len(all_results) = }')
+        #  logging.debug(f'{a_r = }')
+        #  logging.debug(f'{len(all_results) = }')
         last_id = all_results[-1][0]
-        # print(f'{last_id = }')
-        # print('удаляем лишнее')
+        # logging.debug(f'{last_id = }')
+        # logging.debug('удаляем лишнее')
         for i in range(0, (last_id + 1)):
             try:
-                # print(f'{i = } - пытаюсь удалить')
+                # logging.debug(f'{i = } - пытаюсь удалить')
                 cur.execute(f"DELETE FROM duty_month WHERE id='{i}';")
             except:
                 print(f'{i = } - фигня вышла')
                 logging.error(f'{i = } - фигня вышла')
-        # print('читаем базу данных')
         cur.execute("SELECT * FROM duty_month;")
         # all_results = cur.fetchall()
         # for a_r in all_results:
-        #     print(a_r)
+        #     logging.debug(a_r)
         c = calendar.Calendar()
         today = datetime.datetime.now()
         god, mes = today.year, today.month
@@ -86,9 +78,9 @@ def check(read_m, now_m):
                     table.append(stro)
                 elif n_d == 5:
                     pass
-        # print(f'НАДО ЧТО БЫ ВОТ ТАК:')
+        # logging.debug(f'НАДО ЧТО БЫ ВОТ ТАК:')
         # for t in table:
-        #     print(t)
+        #     logging.debug(t)
         cur.executemany(
             "INSERT INTO duty_month VALUES(?, ?, ?, ?, ?, ?);",
             table
@@ -97,7 +89,6 @@ def check(read_m, now_m):
         conn.close()
     else:
         pass
-        # print(f'ТИПА ВСЕ ОК')
-    # print(f'STOP check({read_m}, {now_m})')
-    # logging.info(f'STOP check({read_m}, {now_m})')
+        # logging.debug(f'ТИПА ВСЕ ОК')
+    # logging.debug(f'STOP check({read_m}, {now_m})')
     return

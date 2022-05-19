@@ -1,0 +1,76 @@
+{% extends 'duty/base3.html' %}
+{% load duty_filter %}
+{% load static %}
+
+{% block title %}
+    {{ article.article_title }}
+{% endblock %}
+
+{% block content %}
+<div class="left-col"  align="center">
+    <img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+
+<div class="main">
+    <div align="center" class="mounth">
+        {% if article.article_tit %}
+            {{ article.article_tit }}
+        {% else %}
+            Новость не найдена
+        {% endif %}
+
+    </div>
+    <br>
+    <div  class="text_com_3">
+        {{article.article_text|format_description}}
+
+
+    </div>
+
+
+    <!--<em>{{article.pub_date}}</em>-->
+    <hr>
+
+    {% if latest_comments_list %}
+
+    <div class="com_new"> Комментарии (новые сверху):</div>
+    <br>
+    <!-- <hr> -->
+        {% for c in latest_comments_list %}
+            <div class="block_com">
+                <div class="text_com_2">
+                <i>{{c.comment_text|format_description }}</i>
+                </div>
+                <div class="com_name_2">
+                    {% if ip in good_ips %}
+                            {% for ip in ips %}
+                                {% if c.comment_ip in ip %}
+                                    <strong title="{{ ip.0 }}">{{c.author_name}}</strong>
+                                {% endif %}
+                            {% endfor %}
+                    {% else %}
+                        <strong>{{c.author_name}}</strong>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+    Комментариев нет
+    {% endif %}
+    <hr>
+    <form action="{% url 'leave_comment' article.id %}" method="POST">
+        {% csrf_token %}
+        <input type="text" required placeholder="Ваше имя" name="name"><br>
+        <textarea name="text" required="" placeholder="Текст коментария" cols="30" rows="10"></textarea><br>
+        <button type="submit">Оставить комментарий</button>
+        <input type="hidden" name="send" value="{{ hz }}">
+    </form>
+    <hr>
+    <a href="{% url 'news' %}" style="text-decoration: none; border-bottom: 1px solid;">…назад к списку новостей</a><br>
+</div>
+
+<div class="right-col" align="center">
+    <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+{% endblock %}
+

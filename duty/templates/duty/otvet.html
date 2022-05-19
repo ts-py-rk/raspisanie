@@ -1,0 +1,40 @@
+{% extends 'duty/base2.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+
+<div class="left-col"  align="center">
+    <img src="{% static 'img/lm1n.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+</div>
+<div class="main">
+    <table  class="table1" align="center">
+        <caption class="mounth">Ответственные дежурные!!!</caption>
+        <tr>
+            <td colspan="3"><hr></td>
+        </tr>
+        {%  for d in duters %}
+        {% if d.0 == now %}
+            <tr class="now">
+        {% else %}
+        <tr>
+        {% endif %}
+            <td class="mounth_of_year"> {{ d.0 }} </td>
+            <td class="tire"> - </td>
+            <td class="name1"> {{ d.1 }} </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="3"><hr></td>
+        </tr>
+    </table>
+</div>
+
+<div class="right-col" align="center">
+    <img src="{% static 'img/pm1n.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ">
+</div>
+
+{% endblock %}

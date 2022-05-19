@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +24,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '&h-g%el9ath(k%4&q8g7iix&=m6s2(5++-5_47fba*5*^_cf^^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False           # python manage.py runserver 0.0.0.0:8001 --insecure
+# DEBUG = True          # python manage.py runserver 0.0.0.0:8001
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['10.0.0.5']
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    '10.0.0.5',
+    '127.0.0.1',
+    'localhost',
+    '041-C4515',
+    '172.41.0.174',
+    '192.168.88.253',
+]
 
 
 # Application definition
@@ -37,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'duty',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +75,11 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': [
+                'duty.templatetags.duty_filter',
+            ]
         },
+
     },
 ]
 
@@ -105,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Yekaterinburg'
 
 USE_I18N = True
 
@@ -118,3 +134,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]

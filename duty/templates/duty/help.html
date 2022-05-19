@@ -1,0 +1,27 @@
+{% extends 'duty/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+        <div align="center" class="mounth">Справка</div>
+        <p align="center">Как ответственный дежурный может вносить правки в расписание
+            <br><br>
+
+            <video width="100%" height="100%" controls loop >
+                <source src="{% static 'video/new_manual.mp4' %}" type="video/mp4" />
+            </video>
+        </p>
+        <ol>
+            <li>Нажать на фамилию, которую необходимо изменить</li>
+            <li>Выбрать новую фамилию</li>
+        </ol>
+
+
+
+
+
+
+{% endblock %}

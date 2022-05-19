@@ -1,4 +1,4 @@
-body {
+﻿body {
   background-color: #ffe3bc;
   min-width: 1200px;
   font-family: arial, monospace;
@@ -203,7 +203,7 @@ footer {
 .od {
   position: absolute;
   padding-top: 15px;
-  padding-left: 15px;
+  padding-left: 25px;
   font-size: 15px;
   }
 

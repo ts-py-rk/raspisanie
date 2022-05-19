@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, nitial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel ="stylesheet" href="{% static 'css/style.css' %}?ver={% now 'u'  %}">
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+	<script src="{% static 'scripts/js.js' %}"></script>
+</head>
+<body>
+{% if qr == 'on'	%}
+<div id='qr' class="div_qr" onclick='ref()' style="opacity: 0.95;">
+	  <img class="img_qr"  src="{% static 'files/qr.png' %}" title="получи откат">
+</div>
+{%	else %}
+{%	endif %}
+		<div class="header">
+		<div class="od">
+			<table  class="table" align="center">
+				<caption class="o_d_t" >
+					<a href="{% url 'otv' %}">Ответственные дежурные:</a>
+				</caption>
+				<tr>
+<!--					<td class='o_d_m'>{% now "F" %}</td>-->
+					<td class='o_d_n'>{{ now_duter.0 }}</td>
+					<td class="tire">-</td>
+					<td class='o_d_n'>{{ now_duter.1 }}</td>
+				</tr>
+				<tr>
+					<td class='o_d_m'>{{ next_duter.0 }}</td>
+					<td class="tire">-</td>
+					<td class='o_d_n'>{{ next_duter.1 }}</td>
+				</tr>
+			</table>
+		</div>
+		<div class="home">
+			<a href="{% url 'index' %}" title="Главная страница">
+				<img src="{% static 'img/home.svg' %}">
+			</a>
+		</div>
+		<div class="news">
+			<a href="{% url 'news' %}" title="Новости">
+				<img  style="height: 40px;" src="{% static 'img/news.svg' %}">
+			</a>
+		</div>
+		<div class="instr">
+			<a href="{% url 'rules' %}" title="Положение о дежурстве">
+				<img src="{% static 'img/polozenie.svg' %}">
+			</a>
+		</div>
+		<div class="help">
+			<a href="{% url 'help' %}" title="Справка для ответственного дежурного">
+				<img src="{% static 'img/help.svg' %}">
+			</a>
+		</div>
+		<div class="adm">
+			<a href="{% url 'admin:index' %}" title="Администрирование">
+				<img src="{% static 'img/admin.svg' %}">
+			</a>
+		</div>
+
+		{% if ip in good_ips %}
+			<div class="stat">
+				<a href="{% url 'statistics' %}" title="#">
+					<img src="{% static 'img/statistics.svg' %}">
+				</a>
+			</div>
+		{% else %}
+			<div class="lnk">
+				<a href="{% static 'Дежурства.url' %}" title="Скачать ярлык">
+					<img src="{% static 'img/lnk.png' %}" height="28">
+				</a>
+			</div>
+		{% endif %}
+
+	</div>
+
+	<main class="grid">
+
+		<div class="left-sidebar"  align="center">
+			<img src="{% static 'img/leftcol.png' %}" class="l" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+		</div>
+
+		<div class="main">
+			{% block content %}{% endblock %}
+		</div>
+
+		<div class="right-sidebar" align="center">
+			<img src="{% static 'img/rightcol.png' %}" class="r" title="ВСТУПАЙТЕ В ПРОФСОЮЗ!">
+		</div>
+
+	</main>
+	
+	<footer>
+		<div class="pod">
+			<div class="rz">
+				<table  class="table">
+					<caption class="o_d_r">Резерв:</caption>
+					<tr><td class='o_d_n'>-</td></tr>
+					<tr><td class='o_d_n'>-</td></tr>
+				</table>
+			</div>
+			<span class="cop">
+				<a href="mailto:ialekseeva@grc.ru" title="Нашли ошибку? Свяжитесь с разработчиком">
+					<h2>© 2022, ialekseeva@grc.ru</h2>
+				</a>
+				<p>Материалы на данной странице предоставляются "как есть" и не подпадают под действие каких-либо гарантий, явно выраженных или подразумеваемых</p>
+			</span>
+		</div>
+	</footer>
+</body>
+</html>

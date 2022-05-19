@@ -1,0 +1,60 @@
+{% extends 'duty/base.html' %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+{% if ip in good_ips or ip in superduty_ip %}
+<form method="post" name="form">
+{% csrf_token %}
+    <table  class="table" align="center">
+        <caption class="mounth">{% now "F" %}</caption>
+        <tr>
+            <td colspan="3"><hr></td>
+        </tr>
+            {% for t in wtf %}
+                {% if t.2 != '-' %}
+                    {% if t.1 == now %}
+                        <tr class="now">
+                    {% else %}
+                        <tr>
+                    {% endif %}
+                        <td class="day_of_week">{{ t.0 }}</td>
+                        <td class="day">{{ t.1 }}</td>
+                        <td class="name" valign="middle">
+
+                                {% if month_id == t.1  %}
+                                    <select name="new_person" size="{{ surname|length }}" onchange="form.submit('')">
+                                    {%  for s in surname %}
+                                        <option value="{{ s.pk }}"
+                                            {% if s.familia == t.2 %}
+                                                selected name="option_name">
+                                            {% else %}
+                                                name="person_{{ s.pk }}">
+                                            {% endif %}
+                                        {{ s.familia }}
+                                        </option>
+                                    {% endfor %}
+                                    </select>
+                                    <a class="duter" href="{% url 'edit' %}" title="ОТМЕНА">
+				                        <img src="{% static 'img/x.png' %}" class="cancel">
+			                        </a>
+                                    <input type="hidden" name="id" value="{{ t.1 }}">
+                                {% else %}
+                                    <a class="duter" href="{% url 'edit' t.1 %}" title="Изменить дежурного">{{ t.2 }}</a>
+                                {% endif %}
+
+                        </td></tr>
+                    {% if t.0 == "пт" and t.1 != 4 or t.0 == "сб" %}
+                        <tr><td colspan="3"><hr></td></tr>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+    </table>
+</form>
+{% else %}
+    НЕТ ДОСТУПА
+{% endif %}
+{% endblock %}

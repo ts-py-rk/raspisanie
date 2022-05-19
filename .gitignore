@@ -130,15 +130,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-/.idea
 /.idea/
-./.idea
-./.idea/
-
 
 ### macOS ###
 *.DS_Store
-._*
 .AppleDouble
 .LSOverride
 
@@ -148,10 +143,7 @@ Icon
 # Thumbnails
 ._*
 
+static/files/
+static/video/
 
-### Django ###
-*.log
-*.pot
-*.pyc
-__pycache__/
 

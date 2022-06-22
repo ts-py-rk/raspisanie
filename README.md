@@ -1,4 +1,4 @@
-# Cайт подразделения - [Расписание дежурств](http://tspyrk.pythonanywhere.com/)  
+# Cайт подразделения - [Расписание дежурств](http://tspyrkraspisanie.pythonanywhere.com/)  
 
 Первый рабочий проект на django 3 - это сайт отдела 41 АО "ГРЦ Макеева" 
 с расписанием дежурств, новостями, комментариями и статистикой посещений
@@ -26,4 +26,4 @@
 работников - адаптация под мобильные устройства не проводилась.  
   
 Так же для демонстрации и в обучающих целях была запущена отдельная копия: 
-[http://tspyrk.pythonanywhere.com/](http://tspyrk.pythonanywhere.com/).
+[http://tspyrkraspisanie.pythonanywhere.com/](http://tspyrkraspisanie.pythonanywhere.com/).
